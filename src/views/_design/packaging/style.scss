@@ -1,0 +1,1047 @@
+@import "../../../assets/scss/breakpoints.scss";
+.for-mobile {
+  display: none;
+}
+.packaging {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2.5vw;
+
+    @include breakpoint(mobile) {
+      padding: 0 4.44vw;
+    }
+
+    .heading {
+      font-size: 4vw;
+      text-align: center;
+      color: #fff;
+
+      span{
+        color: #F47E5C;
+      }
+  
+      @include breakpoint(mobile) {
+        font-size: 8vw;
+      }
+    }
+  }
+
+  .parallaxBannervideo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    & .react-player {
+      position: absolute;
+    }
+  }
+  .custom-button:hover i {
+    background: white;
+  }
+
+  .blue-bg {
+    background: linear-gradient(180deg, #2a0b5c 0%, #854be2 77.71%);
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ 
+
+  .typed {
+    span {
+      font-size: inherit;
+      text-decoration: underline;
+    }
+  }
+
+  .bottom {
+    margin-top: 3vw;
+
+    button.submit {
+      display: flex;
+      align-items: center;
+
+      padding: 0.6vw 1.5vw;
+      margin: 0.4%;
+      width: 100%;
+      font-size: 1.4vw;
+      background: #fff;
+      font-weight: 700;
+      border: 0px;
+      border-radius: 0.3vw;
+      color: #fc5555;
+
+      @include breakpoint(mobile) {
+        border-radius: 1vw;
+        padding: 3.33vw 10vw;
+        font-size: 4.17vw;
+        width: 100%;
+      }
+      i {
+        font-size: 1vw;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        width: 1.5vw;
+        height: 1.5vw;
+        margin-left: 0.4vw;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint(mobile) {
+          margin-left: 2vw;
+          padding: 2vw;
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+  .packaging-show {
+    .heading {
+      font-family: "neue-haas-grotesk-display";
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #2f2f2f;
+      gap: 1.66vw;
+
+      padding: 4.44vw 1.11vw 3vw 1.11vw;
+      background: #f5f5f5;
+
+      @include breakpoint(mobile) {
+        padding: 9vw 4.44vw 12.51vw 4.44vw;
+        gap: 3vw;
+
+      }
+
+      h2 {
+        font-weight: 600;
+        font-size: 3.33vw;
+        line-height: 4vw;
+        width: 52vw;
+        letter-spacing: -0.03vw;
+        text-align: center;
+
+        @include breakpoint(mobile){
+            width: 100%;
+            font-size: 6.67vw;
+            line-height: 8.89vw;
+            letter-spacing: -0.13vw;
+        }
+
+        span {
+          color: #463fb0;
+        }
+      }
+      p {
+        font-weight: 500;
+        font-size: 1.4vw;
+        line-height: 2vw;
+        text-align: center;
+
+        /* or 140% */
+
+        // display: flex;
+        // align-items: center;
+        // text-align: center;
+        letter-spacing: 0.02vw;
+        width: 55vw;
+
+        @include breakpoint(mobile){
+            font-size: 3.89vw;
+            line-height: 5.55vw;
+            width: 100%;
+            letter-spacing: 0.07vw;
+        }
+      }
+    }
+    .work-container{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        .work {
+
+          .banner1{
+            object-fit: cover;
+            overflow: hidden;
+            // background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property-1%3DFrame-4111.webp') no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            // height: 658px;
+            aspect-ratio: 2.4/1;
+
+          }
+
+          // .banner1{
+
+          //   div{
+          //     animation: change 10s infinite;
+          //   }
+          // }
+          .banner2::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            position: absolute;
+            // background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Rectangle-625-bg.webp') no-repeat;
+            background-size: cover;
+            background-position: center center;
+            // height: 658px;
+            aspect-ratio: 2.4/1;
+            animation: remove-bg 10s infinite;
+
+            
+          }
+          // .banner2{
+          //   div{
+          //     animation: change 10s infinite;
+          //   }
+          // }
+          .banner3::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            position: absolute;
+            // background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property-1%3DFrame-4110.webp') no-repeat;
+            background-size: cover;
+            background-position: center center;
+            // height: 658px;
+            aspect-ratio: 2.4/1;
+            animation: remove-bg 10s infinite;
+
+            
+          }
+          // .banner3{
+          //   div{
+          //     animation: change 10s infinite;
+          //   }
+          // }
+          .banner4::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            overflow: hidden;
+            position: absolute;
+            // background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property+1%3DFrame-4120.webp') no-repeat;
+            background-position: center center;
+            // height: 658px;
+            aspect-ratio: 0.96;
+            animation: change-background 5s infinite;
+            // object-fit: cover;
+
+            
+          }
+          // .banner4{
+          //   div{
+          //     animation: change 10s infinite;
+
+          //   }
+          // }
+
+          .banner5::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            position: absolute;
+            background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property-1%3DFrame-4119-2.webp') no-repeat;
+            background-size: cover;
+            background-position: center center;
+            // height: 658px;
+            aspect-ratio: 2.4/1;
+            animation: remove-bg 10s infinite;
+
+            
+          }
+          // .banner5{
+          //   div{
+          //     animation: change 10s infinite;
+          //   }
+          // }
+          .banner6::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            position: absolute;
+            background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property-1%3DComponent-15.webp') no-repeat;
+            background-size: cover;
+            background-position: center center;
+            // height: 658px;
+            aspect-ratio: 2.4/1;
+            animation: remove-bg 10s infinite;
+
+            
+          }
+          // .banner6{
+          //   div{
+          //     animation: change 10s infinite;
+          //   }
+          // }
+          .banner7::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            position: absolute;
+            background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property-1%3DComponent-last2.webp') no-repeat;
+            background-size: cover;
+            background-position: center center;
+            // height: 658px;
+            aspect-ratio: 2.4/1;
+            animation: remove-bg 10s infinite;
+
+            
+          }
+          // .banner7{
+          //   div{
+          //     animation: change 10s infinite;
+          //   }
+          // }
+          // @keyframes change-background{
+          //   0%{
+          //     background: url('../../../assets/_design/packaging/Property-1=Frame-412.png') no-repeat;
+          //   }
+          //   100%{
+          //     background: url('../../../assets/_design/packaging/Property 1=Frame 4121.png') no-repeat;
+          //   }
+          // }
+          // @keyframes remove-bg {
+          //   0%{
+          //     opacity: 0;
+          //   }
+          //   50%{
+          //     opacity: 1;
+          //   }
+          //   100%{
+          //     opacity: 0;
+          //   }
+          // }
+
+
+          // @keyframes change {
+          //   0%{
+          //     opacity: 1;
+          //   }
+          //   50%{
+          //     opacity: 0;
+          //   }
+          //   100%{
+          //     opacity: 1;
+          //   }
+          // }
+          .work-image{
+            width: 100vw;
+            height: 61.16vw;
+            // display: none;
+
+            // @include breakpoint(mobile){
+            //   display: block;
+            // }
+
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .img1{
+            background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property-1%3DFrame-4111.webp') no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            // img{
+            //   animation: change 10s infinite;
+
+            // }
+          }
+          .img2{
+            background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Rectangle-625-bg.webp') no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            // img{
+            //   animation: change 10s infinite;
+
+            // }
+          }
+          .img3{
+            background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property-1%3DFrame-4110.webp') no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            // img{
+            //   animation: change 10s infinite;
+
+            // }
+          }
+          .img4{
+            background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property+1%3DFrame-4120.webp') no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            // img{
+            //   animation: change 10s infinite;
+
+            // }
+          }
+          .img5{
+            background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property-1%3DFrame-4119-2.webp') no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            // img{
+            //   animation: change 10s infinite;
+
+            // }
+          }
+          .img6{
+            background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property-1%3DComponent-15.webp') no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            // img{
+            //   animation: change 10s infinite;
+
+            // }
+          }
+          .img7{
+            background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/mobile/Property-1%3DComponent-last2.webp') no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            // img{
+            //   animation: change 10s infinite;
+
+            // }
+          }
+          
+          .work-bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4vw;
+            padding: 3.67vw 7.14vw 2.98vw 7.56vw;
+
+            @include breakpoint(mobile){
+                flex-direction: column;
+                padding: 3.89vw 4.44vw;
+            }
+    
+            .left {
+              display: flex;
+              align-items: center;
+    
+              color: #707070;
+              width: 33%;
+              // gap: 314px;
+
+              @include breakpoint(mobile){
+                width: 100%;
+                justify-content: space-between;
+              }
+    
+              h3 {
+                font-weight: 600;
+                font-size: 1.38vw;
+                line-height: 1.66vw;
+
+                @include breakpoint(mobile){
+                    font-size: 3.89vw;
+                    line-height: 6.67vw;
+                }
+
+                
+              }
+            }
+    
+            .right {
+                width: 66%;
+
+                @include breakpoint(mobile){
+                    width: 100%;
+                }
+              h2 {
+                font-size: 36px;
+                line-height: 56px;
+                display: flex;
+                align-items: center;
+                letter-spacing: -0.48px;
+                color: #2f2f2f;
+
+                @include breakpoint(mobile){
+                    font-size: 6.67vw;
+                    line-height: 8.89vw;
+                    letter-spacing: -0.13vw;
+                }
+              }
+              p {
+                font-weight: 400;
+                font-size: 1.25vw;
+                line-height: 1.66vw;
+                display: flex;
+                align-items: center;
+    
+                color: #939393;
+
+                @include breakpoint(mobile){
+                    font-size: 3.89vw;
+                    line-height: 4.73vw;
+                }
+              }
+            }
+            
+            .custom-button{
+
+              @include breakpoint(mobile){
+                font-size: 3.33vw;
+              }
+
+            }
+            
+          }
+    
+          .bg-aqua-blue{
+            background: #E3FCFF;
+          }
+          .bg-cream{
+            background: #FFF5EA;
+          }
+          .bg-sky-blue{
+            background: #EDFFF1;
+          }
+
+          .blue-10{
+            background: #EDEFFF;
+          }
+          .blue-20{
+            background: #EAFFF7;
+          }
+          .pink-10{
+            background: #FFF7E8;
+          }
+          .blue-30{
+            background: #F4FFEE;
+          }
+        }
+
+        .columns{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            .work{
+                width: calc(50% - 15px);
+
+                @include breakpoint(mobile){
+                  width: 100%;
+                }
+
+                .work-bottom{
+                    display: block;
+                    padding: 43px 71px 50px 87px;
+
+                    @include breakpoint(mobile){
+                      padding: 14px 16px;
+                  }
+
+                    .left{
+                        width: 100%;
+                    }
+                    .right{
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+    }
+  }
+
+  .our-process{
+    background: #FAFAFA;
+    padding: 2.22vw 0;
+    margin-top: 2.77vw;
+
+    @include breakpoint(mobile){
+      margin-top: 7.7vw;
+      padding: 8.89vw 0;
+
+    }
+    
+    .header-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .header{
+        display: flex;
+        flex-direction: column;
+        gap: 0.97vw;
+  
+        width: 43.3vw;
+
+        @include breakpoint(mobile){
+          width: 100%;
+          gap: 3.89vw;
+          padding: 0 4.44vw;
+        }
+  
+        .subheading{
+          font-weight: 450;
+          font-size: 1.33vw;
+          line-height: 1.94vw;
+  
+          text-align: center;
+          color: #2F2F2F;
+          letter-spacing: 0.02vw;
+
+          @include breakpoint(mobile){
+            font-size: 3.89vw;
+            line-height: 7.78vw;
+            letter-spacing: 0.07vw;
+          }
+        }
+  
+        h3{
+          font-size: 3.33vw;
+          line-height: 4.16vw;
+          color: #2F2F2F;
+          text-align: center;
+          letter-spacing: -0.09vw;
+
+          @include breakpoint(mobile){
+            font-size: 6.67vw;
+            line-height: 8vw;
+            letter-spacing: -0.38vw;
+          }
+  
+          span{
+            color: #F52F57;
+            font-size: inherit;
+            line-height: inherit;
+            letter-spacing: inherit;
+          }
+        }
+  
+        .description{
+          font-size: 1.38vw;
+          line-height: 1.94vw;
+          text-align: center;
+          letter-spacing: 0.02vw;
+          color: #2F2F2F;
+
+          @include breakpoint(mobile){
+            font-size: 3.89vw;
+            line-height: 5.56vw;
+            letter-spacing: 0.07vw;
+          }
+        }
+      }
+
+    }
+
+    .slider{
+      padding: 6.66vw 6.94vw 4.85vw 6.94vw;
+
+      @include breakpoint(mobile){
+        padding: 8.89vw 5.56vw;
+      }
+
+
+      .item{
+        display: flex !important;
+        align-items: center;
+        width: 78vw !important;
+        gap: 4.58vw !important;
+
+        padding-bottom: 2.22vw;
+
+        @include breakpoint(mobile){
+          flex-direction: column-reverse;
+          width: 100% !important;
+          gap: 8.89vw !important;
+          padding-bottom: 6.67vw;
+        }
+
+        .left{
+          .heading{
+            display: flex;
+            flex-direction: column;
+            gap: 1.11vw;
+
+            @include breakpoint(mobile){
+              gap: 4.44vw;
+            }
+
+            h3{
+              font-weight: 700;
+              font-size: 2.22vw;
+              line-height: 2.77vw;
+              letter-spacing: -0.03vw;
+              color: #3D3D3D;
+
+              @include breakpoint(mobile){
+                font-size: 5.56vw;
+                line-height: 8.89vw;
+                letter-spacing: -0.13vw;
+              }
+            }
+            p{
+              font-weight: 400;
+              font-size: 1.11vw;
+              line-height: 1.8vw;
+              letter-spacing: -0.0098em;
+
+              color: #2F2F2F;
+
+              @include breakpoint(mobile){
+                font-size: 3.89vw;
+                line-height: 5.56vw;
+                letter-spacing: -0.0098em;
+              }
+            }
+          }
+
+          ul{
+            display: flex;
+            flex-direction: column;
+            gap: 1.11vw;
+            padding-top: 2.22vw;
+
+            @include breakpoint(mobile){
+              gap: 4.44vw;
+              padding-top: 4.44vw;
+            }
+            li{
+              display: flex;
+              gap: 0.7vw;
+
+              font-size: 18px;
+              line-height: 26px;
+              color: #606060;
+
+              @include breakpoint(mobile){
+                gap: 2.7vw;
+                font-size: 4.44vw;
+                line-height: 7.22vw;
+              }
+              img{
+                width: 1.45vw;
+                aspect-ratio: 1/1;
+                display: inline;
+
+                @include breakpoint(mobile){
+                  width: 5.56vw;
+                }
+              }
+            }
+
+          }
+        }
+
+        .right{
+
+          img{
+            width: 40.8vw;
+            height: 27.4vw;
+
+            @include breakpoint(mobile){
+              width: 100%;
+              height: 53.65vw;
+            }
+          }
+        }
+      }
+      .slick-dots{
+        display: inline-block !important;
+        width: auto !important;
+
+        @include breakpoint(mobile){
+          display: block !important;
+          width: 100% !important;
+        }
+
+        li{
+          width: 0.7vw !important;
+          height: 0.7vw !important;
+
+          @include breakpoint(mobile){
+            width: 2.22vw;
+            height: 2.22vw;
+          }
+        }
+
+        li button:before{
+          font-size: 0.7vw;
+          color: #472086;
+          width: 0.7vw;
+          height: 0.7vw;
+
+          @include breakpoint(mobile){
+            font-size: 2.22vw;
+            width: 2.22vw;
+            height: 2.22vw;
+          }
+        }
+      }
+    }
+    
+  }
+
+  .banner{
+    background: url('https://99xassets.s3.ap-south-1.amazonaws.com/packaging-design-page/Frame+4143.webp') no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 33.24vw;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(mobile){
+      height: 87vw;
+    }
+
+    // img{
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   z-index: -1;
+    //   object-fit: cover;
+
+    // }
+    .content{
+      color: #ffffff;
+      width: 61vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      
+      @include breakpoint(mobile){
+        width: 100%;
+        padding: 8.9vw 4.44vw;
+      }
+
+      h3{
+        font-size: 3.33vw;
+        line-height: 3.88vw;
+        letter-spacing: -0.03vw;
+        text-align: center;
+
+        @include breakpoint(mobile){
+          font-size: 6.67vw;
+          line-height: 8.89vw;
+          letter-spacing: -0.13vw;
+        }
+      }
+      p{
+        font-size: 1.38vw;
+        line-height: 2vw;
+        letter-spacing: 0.02vw;
+        text-align: center;
+
+        padding: 1.66vw 0 2.5vw 0;
+
+        @include breakpoint(mobile){
+          font-size: 3.89vw;
+          line-height: 5.56vw;
+          letter-spacing: 0.07vw;
+        padding: 6.67vw 0 8.89vw 0;
+
+        }
+
+      }
+
+      button{
+        padding: 1.11vw 3.88vw;
+        background: #10152B;
+        color: #ffffff;
+        border: none;
+        border-radius: 0.27vw;
+        font-size: 1.25vw;
+        line-height: 1.5vw;
+        font-weight: 700;
+
+        @include breakpoint(mobile){
+          font-size: 3.89vw;
+          line-height: 5.5vw;
+          padding: 3.6vw 15.5vw;
+          border-radius: 1.11vw;
+          width: 100%;
+        }
+        
+
+      }
+    }
+  }
+  .free-trial-form {
+    border: 2px solid #53bc9c;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+
+    & input {
+      flex: 1 0 auto;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      height: 36px;
+      padding: 0px 20px;
+    }
+
+    & button {
+      padding: 0px 20px;
+      height: 36px;
+      line-height: 36px;
+      background-color: #53bc9c;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+
+  .services {
+    cursor: pointer;
+
+    & .round-icon {
+      border: 1px solid #53bc9c;
+      color: #53bc9c;
+    }
+
+    &:hover .round-icon {
+      background: #53bc9c;
+      color: #fff;
+    }
+  }
+
+  .video-player {
+    justify-content: center;
+    align-content: center;
+
+    div.player-container {
+      align-self: center;
+      height: 500px;
+      width: 100vh;
+      text-align: center;
+      margin: auto;
+
+      img {
+        position: relative;
+        top: 35%;
+      }
+    }
+
+    div.play-btn {
+      position: relative;
+    }
+  }
+
+  .blogs {
+    width: 100%;
+    min-height: 100%;
+    box-shadow: 0px 0px 32px -11px #ccc;
+    cursor: pointer;
+
+    & .blogs-body {
+      width: 100%;
+      padding: 20px 18px;
+      text-align: left;
+
+      & ul {
+        & li {
+          font-size: 16px;
+          padding: 5px 0px;
+        }
+      }
+    }
+  }
+
+  .li-grey {
+    font-family: gilroyBold;
+    color: #888;
+
+    li {
+      font-size: 20px;
+    }
+  }
+
+  .homepage-clients {
+    height: 44.0146vw;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .homepage-clients {
+    margin-top: 6.3889vw;
+  }
+
+  @media screen and (max-width: 600px) {
+    .for-desktop {
+      display: none;
+    }
+    .for-mobile {
+      display: block;
+    }
+    .hero-content {
+      .heading {
+        font-size: 7.1667vw;
+      }
+
+      .heading2 {
+        // font-family: neue-haas-grotesk-text-pro;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6.6667vw;
+        line-height: 7.7778vw;
+      }
+    }
+    .bg-white {
+      margin-top: -8vw;
+    }
+  }
+}

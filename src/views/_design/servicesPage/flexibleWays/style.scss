@@ -1,0 +1,328 @@
+@import "../../../../assets/scss/breakpoints.scss";
+@import "../../../../assets/scss/colours.scss";
+
+.flexible-ways {
+  padding-top: 4.2328vw;
+  padding-right: 6.6138vw;
+  padding-bottom: 4.6296vw;
+  padding-left: 6.6138vw;
+  background-color: #fafafa;
+  // margin-top: 16vw;
+
+  & .header {
+    max-width: 44.8413vw;
+
+    & h2 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2.381vw;
+      line-height: 2.9762vw;
+      color: #ff6666;
+    }
+
+    & p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.3228vw;
+      line-height: 1.4;
+      color: #000000;
+    }
+  }
+
+  & .body {
+    margin-top: 2.4471vw;
+    display: flex;
+
+    & .left {
+      flex: 1 1 35.2844vw;
+      border-right: 1px solid #bababa;
+      height: 35.0529vw;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    & .right {
+      margin-left: 3.0754vw;
+      display: flex;
+      gap: 2.1164vw;
+      // alsdkf
+
+      & .fw-card {
+        width: 23.1481vw;
+        height: 35.0529vw;
+        background-color: #fffffe;
+        border: 0.0331vw solid #9c9c9c;
+        border-radius: 0.6614vw;
+        padding-top: 2.1164vw;
+
+        & .fw-card-header {
+          & img {
+            width: 100%;
+          }
+        }
+
+        & .fw-card-body {
+          padding: 2.1164vw;
+
+          & h2 {
+            font-weight: 500;
+            font-size: 1.3228vw;
+            line-height: 1.6534vw;
+            color: #3d3d3d;
+          }
+        }
+      }
+
+      & .card-inner {
+        margin-top: 0.7937vw;
+      }
+
+      & .card-1-inner {
+        & h3 {
+          font-weight: 600;
+          font-size: 1.0582vw;
+          line-height: 1.2566vw;
+          letter-spacing: -0.0066vw;
+          color: #777777;
+        }
+
+        & .product-design-list {
+          margin-top: 1.5873vw;
+          display: flex;
+          gap: 1vw;
+
+          & .part-1 {
+            flex: 1 1 50%;
+          }
+
+          & .part-2 {
+            flex: 1 1 50%;
+          }
+
+          & .list-item {
+            margin-top: 0.5291vw;
+            display: flex;
+            gap: 0.3968vw;
+            align-items: flex-start;
+
+            & p {
+              margin-bottom: 0;
+              font-weight: 500;
+              font-size: 0.7937vw;
+              line-height: 1.5;
+              letter-spacing: -0.0132vw;
+              color: #3d3d3d;
+            }
+
+            & img {
+              position: relative;
+              top: 0.3vw;
+            }
+          }
+        }
+      }
+
+      & .card-2-inner {
+        & h3 {
+          font-weight: 600;
+          font-size: 1.0582vw;
+          line-height: 1.2566vw;
+          letter-spacing: -0.0066vw;
+          color: #ff6666;
+        }
+
+        & p {
+          margin-top: 0.7937vw;
+          font-weight: 400;
+          font-size: 0.9259vw;
+          line-height: 1.29;
+          color: #3d3d3d;
+        }
+
+        & .fw-card-footer {
+          margin-top: 1.6534vw;
+          font-weight: 600;
+          font-size: 0.7937vw;
+          line-height: 1;
+          color: #2f2f2f;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flexible-ways {
+    margin-top: 6vw;
+    .header {
+      margin: auto;
+      max-width: 85.1667vw;
+      // text-align: center;
+
+      h2 {
+        font-weight: 500;
+        // font-size: 5.55vw;
+        font-size: 6.9vw;
+        line-height: 6.94vw;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        // font-size: 2.8vw;
+        font-size: 4.4228vw;
+        line-height: 5.8889vw;
+      }
+    }
+
+    .body {
+      flex-direction: column;
+
+      .left {
+        border: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 11.38vw;
+
+        img {
+          width: 39.1667vw;
+        }
+      }
+
+      .right {
+        margin-top: 10vw;
+        flex-direction: column;
+        gap: 6.9444vw;
+        // justify-content: center;
+        align-items: center;
+
+        .fw-card {
+          // width: 68.6111vw;
+          // height: 76.1111vw;
+          width: 80vw;
+          height: 90vw;
+
+          text-align: center;
+          border: 1px solid #a5a5a5;
+          border-radius: 4.7222vw;
+
+          .fw-card-header {
+            img {
+              // width: 45.08vw;
+              width: 52vw;
+              // height: 25.88vw;
+              height: 32vw;
+            }
+          }
+
+          .fw-card-body {
+            h2 {
+              font-style: normal;
+              font-weight: 500;
+              // font-size: 3.888vw;
+              font-size: 3.988vw;
+              line-height: 4.72vw;
+            }
+          }
+        }
+
+        .card-1-inner {
+          h3 {
+            // width: 51.11vw;
+            // height: 7.22vw;
+            margin: auto;
+            font-style: normal;
+            font-weight: 500;
+            // font-size: 3.5vw;
+            font-size: 4.5vw;
+            line-height: 3.91vw;
+            color: #ff6666;
+            padding-top: 1vw;
+          }
+
+          .product-design-list {
+            padding-top: 2.2vw;
+            .part-1 {
+              .list-item {
+                img {
+                  padding-left: 7.5vw;
+                  margin-top: 1.8vw;
+                }
+
+                p {
+                  font-style: normal;
+                  font-weight: 500;
+                  // font-size: 2.5vw;
+                  font-size: 3.8228vw;
+                  padding-left: 1.6667vw;
+                  text-align: left;
+                  line-height: 5vw;
+                }
+              }
+            }
+
+            .part-2 {
+              .list-item {
+                padding-right: 7.5vw;
+
+                img {
+                  margin-top: 1.8vw;
+                }
+
+                p {
+                  font-style: normal;
+                  font-weight: 500;
+                  // font-size: 2.5vw;
+                  font-size: 3.8228vw;
+                  padding-left: 1.6667vw;
+                  text-align: left;
+                  line-height: 5vw;
+                }
+              }
+            }
+          }
+        }
+
+        .card-2-inner {
+          h3 {
+            // width: 51.11vw;
+            height: 7.22vw;
+            margin: auto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 3.988vw;
+            line-height: 3.91vw;
+            color: #ff6666;
+          }
+
+          p {
+            margin: auto;
+            margin-top: 7.58vw;
+            // width: 53.05vw;
+            height: 5.55vw;
+            font-style: normal;
+            font-weight: 400;
+            // font-size: 2.32vw;
+            font-size: 3.8228vw;
+            line-height: 3.77vw;
+            text-align: center;
+            color: #3d3d3d;
+          }
+
+          .fw-card-footer {
+            font-style: normal;
+            font-weight: 500;
+            // font-size: 2.3vw;
+            font-size: 3.8228vw;
+            line-height: 3.83vw;
+            margin: auto;
+            margin-top: 9.58vw;
+            color: #2f2f2f;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.services-c2a {
+  // margin-top: 2.1164vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4.3981vw 0;
+
+  @media (max-width: 650px){
+    padding: 8.89vw 4.44vw;
+  }
+
+
+  & h2 {
+    font-weight: 700;
+    font-size: 3.1746vw;
+    // font-size: 3.7746vw;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: -0.0317vw;
+    color: #ffffff;
+
+    max-width: 60.4735vw;
+    @media only screen and (max-width: 600px) {
+      // font-size: 3.7746vw;
+      font-size: 5.2vw;
+    }
+  }
+  .short-heading{
+    width: 30vw !important;
+
+    @media (max-width: 660px) {
+      width: 100% !important;
+    }
+  }
+  & .btn {
+    margin-top: 2.1164vw;
+    background-color: #6931c4;
+    padding: 1.1243vw 2.3809vw;
+    width: 18.5185vw;
+    border: 0;
+    color: #fff !important;
+    border-radius: 0.2645vw;
+    font-family: "neue-haas-grotesk-display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1904vw;
+    line-height: 1.2778v2;
+    @media only screen and (max-width: 600px) {
+      font-size: 4.2vw;
+      width: 34vw;
+    }
+  }
+
+  // & .c2a-btn {
+  //   margin-top: 2.6455vw;
+  //   border-radius: 0.2646vw;
+  //   padding: 1.1243vw 2.381vw;
+  //   font-weight: 700;
+  //   font-size: 1.3228vw;
+  //   line-height: 1.6534vw;
+  //   color: #ffffff;
+  // }
+}

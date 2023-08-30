@@ -1,0 +1,468 @@
+@import "../../../../assets/scss/breakpoints.scss";
+.logo-showcase {
+	margin-top: 9.7222vw;
+	margin-right: 6.6138vw;
+	margin-left: 6.6138vw;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	// grid-template-rows: 16.4021vw 44.9074vw 16.4021vw 44.9074vw 16.4021vw 44.9074vw 20.9074vw;
+	grid-template-rows: 16.4021vw 35.9074vw 16.4021vw 37.9074vw 14.4021vw 36.9074vw 20.9074vw 50.9074vw ;
+	column-gap: 4.2328vw;
+	position: relative;
+	.ps-image {
+			aspect-ratio: 0.75/ 1;
+		.parallaxBanner {
+			aspect-ratio: 0.75/ 1;
+			// transform: translate3d(0, 20%, 0);
+		}
+
+        
+        
+
+       
+	}
+    .parallax-1{
+        background-image: url('https://99xassets.s3.ap-south-1.amazonaws.com/logo-design-page/Property-1%3DComponent-52.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        // .banner1{
+        //     div{
+        //         z-index: 1;
+        //         display: block;
+        //         animation: change 3s infinite;
+
+        //     }
+
+        // }
+
+        @include breakpoint(mobile){
+        background-image: url('https://99xassets.s3.ap-south-1.amazonaws.com/logo-design-page/mobile/Property-1%3DComponent-52.webp');
+
+        }
+
+
+
+    }
+    .parallax-2{
+        background-image: url('https://99xassets.s3.ap-south-1.amazonaws.com/logo-design-page/component-49.2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        // .banner2{
+        //     z-index: 1;
+        //     opacity: 1;
+        //     animation: change 8s infinite;
+
+        // }
+        @include breakpoint(mobile){
+        background-image: url('https://99xassets.s3.ap-south-1.amazonaws.com/logo-design-page/mobile/Property-1%3DComponent-48.webp');
+            
+        }
+    }
+    .parallax-3{
+        background-image: url('https://99xassets.s3.ap-south-1.amazonaws.com/logo-design-page/component-27.2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        // .banner3{
+        //     z-index: 1;
+        //     opacity: 1;
+        //     animation: change 8s infinite;
+
+        // }
+    }
+    .parallax-4{
+        background-image: url('https://99xassets.s3.ap-south-1.amazonaws.com/logo-design-page/Rectangle-638.2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        // .banner4{
+        //     z-index: 1;
+        //     opacity: 1;
+        //     animation: change 8s infinite;
+
+        // }
+    }
+    .parallax-5{
+        background-image: url('https://99xassets.s3.ap-south-1.amazonaws.com/logo-design-page/Component-54.2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        // .banner5{
+        //     z-index: 1;
+        //     opacity: 1;
+        //     animation: change 8s infinite;
+
+        // }
+    }
+    .parallax-6{
+        background-image: url('https://99xassets.s3.ap-south-1.amazonaws.com/logo-design-page/Component-38.2.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        // .banner6{
+        //     z-index: 1;
+        //     opacity: 1;
+        //     animation: change 8s infinite;
+
+        // }
+    }
+    // @keyframes change {
+    //     0%{
+    //         background-image: url('../../../../assets/_design/logoDesign/Component-57.png');
+    //     }
+    //     50%{
+    //     background-image: url('../../../../assets/_design/logoDesign/Property-1=Component-52.png');
+            
+    //     }
+    //     100%{
+    //     background-image: url('../../../../assets/_design/logoDesign/Component-57.png');
+
+            
+    //     }
+    // }
+
+	& .ps-1 {
+		grid-area: 1 / 1 / 2/ 2;
+
+		& h2 {
+			font-family: "neue-haas-grotesk-display";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 3.1746vw;
+			line-height: 1.17;
+			letter-spacing: -0.0317vw;
+			color: #505050;
+
+			& span {
+				font-family: "neue-haas-grotesk-display";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 3.1746vw;
+				line-height: 1.17;
+				letter-spacing: -0.0317vw;
+				color: #F52F57;
+			}
+		}
+
+		& p {
+			margin-top: 1.5873vw;
+			font-weight: 500;
+			font-size: 1.3228vw;
+			line-height: 1.4;
+			display: flex;
+			align-items: center;
+			letter-spacing: 0.0185vw;
+			color: #222222;
+		}
+	}
+
+	& .ps-2 {
+		grid-area: 1 / 2 / 3 / 3;
+	}
+
+	& .ps-3 {
+		grid-area: 2 / 1 / 4 / 2;
+        margin-top: 1.66vw;
+	}
+
+	& .ps-4 {
+		grid-area: 3 / 2 / 5 / 3;
+		margin-top: 18vw;
+	}
+
+	& .ps-5 {
+		grid-area: 4 / 1 / 6 / 2;
+		margin-top: 20vw;
+	}
+
+	& .ps-6 {
+		grid-area: 5 / 2 / 7 / 3;
+		margin-top: 35vw;
+	}
+
+	& .ps-7 {
+		margin-top: 40vw;
+		// margin-bottom: -16vw;
+
+		grid-area: 6 / 1 / 8 / 2;
+
+		// & h2 {
+		// 	font-style: normal;
+		// 	font-weight: 500;
+		// 	font-size: 3.7037vw;
+		// 	line-height: 4.6296vw;
+		// 	display: flex;
+		// 	align-items: center;
+		// 	letter-spacing: -0.0331vw;
+		// 	color: #2f2f2f;
+		// 	max-width: 30vw;
+		// }
+
+		// & .btn {
+		// 	margin-top: 3.1746vw;
+		// 	background: #ff6666;
+		// 	border-radius: 0.2646vw;
+		// 	padding: 1.3228vw 4.2328vw;
+		// 	font-weight: 700;
+		// 	font-size: 1.5873vw;
+		// 	line-height: 1.9841vw;
+		// 	max-width: 35.2513vw;
+		// 	width: 100%;
+		// 	color: #ffffff;
+
+		// 	& svg {
+		// 		margin-left: 0.7vw;
+		// 		transform: scale(1.2);
+		// 	}
+		// }
+	}
+
+	// & .ps-project {
+	// 	position: relative;
+	// 	&:hover .ps-text {
+	// 		@media screen and (min-width: 600px) {
+	// 			background: linear-gradient(0deg, black, transparent);
+    //     opacity: 1;
+    //     transition: opacity 0.8s ease-in-out;
+	// 		}
+	// 	}
+	// 	& .img-container {
+	// 		width: 100%;
+	// 		height: 55.2646vw;
+
+	// 		// background-color: #9c9c9c;
+
+	// 		& .ps-image {
+	// 			width: 100%;
+	// 			height: 100%;
+	// 			transition: 0.35s;
+	// 		}
+
+	// 		& .ps-image:hover {
+	// 			transform: scale(0.978);
+	// 			transition: transform 0.368s ease-in;
+	// 		}
+	// 	}
+
+	// 	& h3 {
+	// 		margin-top: 2.455vw;
+	// 		font-style: normal;
+	// 		font-weight: 800;
+	// 		font-size: 1.9873vw;
+	// 		line-height: 1.918vw;
+	// 		letter-spacing: 0.0317vw;
+	// 		//   color: #676767;
+	// 	}
+
+	// 	& p {
+	// 		margin-top: 0.7937vw;
+	// 		margin-bottom: 0.8937vw;
+	// 		font-style: normal;
+	// 		font-weight: 500;
+	// 		font-size: 1.3228vw;
+	// 		line-height: 1.5873vw;
+	// 		letter-spacing: 0.0317vw;
+	// 		//   color: #676767;
+	// 	}
+	// }
+
+	//   &.ps-project:hover{
+	//     transform: scale(1.2);
+	//     transition: transform 1s ease-in-out;
+
+	// }
+    .ps-text {
+        // position: absolute;
+        // bottom: 0;
+        // // opacity: 0;
+        padding-top: 1.66vw;
+        padding-bottom: 4vw;
+        color: white !important;
+        padding-right: 1vw;
+
+        .subheading{
+            font-weight: 600;
+            font-size: 1.4vw;
+            line-height: 1.66vw;
+            color: #707070;
+        }
+
+        h3{
+            font-weight: 700;
+            font-size: 1.66vw;
+            line-height: 2vw;
+            color: #676767;
+        }
+        p{
+            font-size: 1.4vw;
+            line-height: 1.66vw;
+            color: #676767;
+            letter-spacing: 0.03vw;
+        }
+    }
+    .custom-btn {
+        color: #707070 !important;
+        border-color: #707070 !important;
+        background: transparent;
+        border: 0.5px solid #9C9C9C;
+        border-radius: 2.4vw;
+        padding: 0.4vw 1vw;
+        display: flex;
+        flex-direction: revert;
+        align-items: center;
+        font-size: 1vw;
+        // color: $btnGrey !important;
+        font-weight: 700 !important;
+        margin: 0.5vw 1.2vw 0.5vw 0vw;
+        transition: all 0.2s;
+        font-family: "neue-haas-grotesk-display";
+        @include breakpoint(mobile) {
+            line-height: 3.6vw;
+            font-size: 3vw;
+            border-radius: 5vw;
+            padding: 1.2vw 3vw;
+        }
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .for-mobile{
+        display: block;
+    }
+    .logo-showcase {
+        margin-top: 6vw;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 0;
+        // justify-items: center;
+        // align-items: center;
+        .ps-image {
+            width: 100vw;
+            aspect-ratio: 360/433;
+
+            .parallaxBanner {
+                aspect-ratio: 360/433;
+                display: none;
+            }
+        }
+        // margin: 0;
+
+        .ps-1 {
+            // margin-top: 4vw;
+            // margin-left: 5vw;
+            // margin-bottom: 4vw;
+            padding: 8.9vw 4.44vw;
+
+            h2 {
+                // width: 50vw;
+                font-style: normal;
+                font-weight: 700;
+                // font-size: 4.2vw;
+                font-size: 6.8746vw;
+                line-height: 6.5556vw;
+                letter-spacing: 1px;
+                text-align: center;
+                // text-align: center;
+                span {
+                    font-size: 6.8746vw;
+                    color: #222222;
+
+                }
+            }
+
+            p {
+                // width: 69.7778vw;
+                font-style: normal;
+                font-weight: 500;
+                // font-size: 2.7778vw;
+                font-size: 3.8vw;
+                line-height: 140%;
+                color: #606060;
+                margin-top: 6.67vw;
+                text-align: center;
+            }
+        }
+
+        .ps-project {
+            .img-container {
+                height: 100%;
+                width: 100%;
+            }
+
+            .ps-text {
+               padding: 8.34vw 4.44vw;
+
+                h3 {
+                    margin-top: 6.12vw;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 6.6746vw;
+                    line-height: 5.2778vw;
+                    display: flex;
+                    color: #676767;
+                }
+
+                p {
+                    // width: 50.9444vw;
+                    // width: 60vw;
+                    width: 80vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    // font-size: 2.5222vw;
+                    font-size: 4vw;
+                    line-height: 4.7778vw;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.48px;
+                    color: #676767;
+                    padding-top: 2vw;
+                }
+
+                .subheading{
+                    font-size: 3.9vw;
+                    line-height: 6.67vw;
+                    color: #707070;
+                }
+
+                .custom-btn {
+                    color: #676767 !important;
+                    border-color: #676767 !important;
+                    font-size: 3.5vw;
+                }
+            }
+        }
+
+        .ps-2 {
+            margin: 0px;
+        }
+
+        .ps-3 {
+            margin: 0px;
+        }
+
+        .ps-4 {
+            margin: 0px;
+        }
+
+        .ps-5 {
+            margin: 0px;
+        }
+
+        .ps-6 {
+            margin: 0px;
+        }
+        .ps-7 {
+            margin: 0px;
+        }
+
+       
+    }
+}

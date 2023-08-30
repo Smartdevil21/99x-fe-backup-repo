@@ -1,0 +1,131 @@
+.services-header {
+  & h1 {
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.037vw;
+    line-height: 1.12;
+    letter-spacing: -0.0661vw;
+    color: #2f2f2f;
+
+    & span {
+      font-family: "neue-haas-grotesk-display";
+      color: #f52f57;
+      text-decoration: underline;
+      text-decoration-thickness: 0.25vw;
+      text-underline-offset: 0.5vw;
+    }
+  }
+
+  & p {
+    text-align: center;
+    margin-top: 3.1746vw;
+    font-family: "neue-haas-grotesk-display";
+    font-style: normal;
+    font-weight: 550;
+    font-size: 1.4228vw;
+    line-height: 1.4;
+    letter-spacing: -0.0079vw;
+    color: #7b7878;
+  }
+
+  & .header-buttons {
+    margin-top: 1.5873vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7937vw;
+
+    & a {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1vw;
+      line-height: 1.43;
+      letter-spacing: 0.0132vw;
+      color: #6f6f6f;
+
+      border: 0.5px solid #6f6f6f;
+      border-radius: 28px;
+      padding: 0.3968vw 0.7937vw 0.3968vw 0.3968vw;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        // font-style: normal;
+        // font-weight: 700 !important;
+        // font-size: 2vw;
+      }
+
+      &:nth-child(1) svg {
+        fill: #15d199;
+      }
+      &:nth-child(2) svg {
+        fill: #f9bb00;
+      }
+      &:nth-child(3) svg {
+        fill: #dc1871;
+      }
+    }
+  }
+
+  & .video-showcase {
+    background-color: #ff6666;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 4.6296vw;
+    padding-bottom: 4.6296vw;
+
+    & .video-container {
+      width: 86.7725vw;
+      height: 47.619vw;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services-header {
+    margin-top: 8vw;
+    & h1 {
+      font-size: 6.7037vw;
+    }
+    & p {
+      font-weight: 500;
+      // font-size: 2.8228vw;
+      font-size: 3.9228vw;
+    }
+    & .header-buttons {
+      gap: 2.7937vw;
+
+      & a {
+        font-size: 2.6259vw;
+        line-height: 1.83;
+        letter-spacing: -0.0132vw;
+        color: #6f6f6f;
+
+        border: 0.5px solid #6f6f6f;
+        border-radius: 28px;
+        padding: 0.3968vw 0.7937vw 0.3968vw 0.3968vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(1) svg {
+          fill: #15d199;
+        }
+        &:nth-child(2) svg {
+          fill: #f9bb00;
+        }
+        &:nth-child(3) svg {
+          fill: #dc1871;
+        }
+      }
+    }
+    & .video-showcase {
+      margin-top: 9.1587vw;
+    }
+  }
+}

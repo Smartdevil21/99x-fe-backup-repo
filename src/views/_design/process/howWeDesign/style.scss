@@ -1,0 +1,205 @@
+@import "../../../../assets/scss/colours.scss";
+@import "../../../../assets/scss/breakpoints.scss";
+
+.how-we-design {
+  margin-top: 2.9762vw;
+  padding-top: 1.7196vw;
+
+  background-color: #fafafa;
+  @media only screen and (max-width: 600px) {
+    margin-top: 10vw;
+  }
+}
+
+.how-we-design-header {
+  margin-left: 6.6138vw;
+
+  .how-we-design-heading {
+    margin-top: 3.7037vw;
+    max-width: 69.1667vw;
+    font-weight: 600;
+    font-size: 3.1746vw;
+    line-height: 3.9683vw;
+    // letter-spacing: -0.0913vw;
+    color: #2f2f2f;
+    @media only screen and (max-width: 600px) {
+      font-size: 6.6667vw;
+      line-height: 8.3333vw;
+    }
+
+    & span {
+      font-weight: 600;
+      font-size: inherit;
+      line-height: 3.9683vw;
+      // letter-spacing: -0.0913vw;
+      color: #f52f57;
+    }
+  }
+}
+
+.how-we-design .search-bar {
+  margin-left: 6.4153vw;
+  display: flex;
+}
+
+.how-we-design .search-bar {
+  margin-top: 2.6455vw;
+  flex: 0 0 70px;
+}
+
+.how-we-design .search-bar img {
+  width: 2.1164vw;
+}
+
+.search-btn-carousel {
+  flex: 1;
+}
+
+.how-we-design-slider-container .slick-track div {
+  padding: 0 0.1vw;
+}
+
+.custom-button-2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5873vw;
+  line-height: 1.33;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.031vw;
+
+  color: #2f2f2f;
+
+  border: 0;
+  background-color: #f4f4f1;
+  padding: 2.6455vw 1.9841vw;
+
+  &.active {
+    background-color: #7b61ff;
+    color: #fff;
+  }
+}
+
+// Design body
+
+.how-we-design-body {
+  margin-top: 4.6296vw;
+  margin-left: 6.4153vw;
+  margin-right: 8.66vw;
+
+  & .design {
+    display: flex;
+
+    &:last-child .design-left-space {
+      border: 0;
+    }
+
+    & .design-left-space {
+      flex: 0 0 4.1667vw;
+      border-right: 1px solid $btnGrey;
+      position: relative;
+      top: 2vw;
+
+      &::before {
+        display: inline-block;
+        content: "";
+        width: 1.3888vw;
+        height: 1.3888vw;
+        background-color: #ff6666;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: -0.69vw;
+      }
+    }
+
+    & .design-content {
+      padding-bottom: 5vw;
+      margin-left: 2.7777vw;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      @media only screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      & .design-content-desc {
+        flex: 1;
+        & h2 {
+          padding-top: 1.5vw;
+          font-weight: 700;
+          font-size: 2.1164vw;
+          line-height: 1.25;
+          letter-spacing: -0.0311vw;
+          color: #3d3d3d;
+          @media only screen and (max-width: 600px) {
+            font-size: 5.2444vw;
+          }
+        }
+
+        & p {
+          margin-top: 1.5873vw;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.1904vw;
+
+          line-height: 1.44;
+          letter-spacing: -0.0098em;
+          color: #2f2f2f;
+          max-width: 31.746vw;
+          @media only screen and (max-width: 600px) {
+            // font-size: 2.5vw;
+            font-size: 4.2228vw;
+            max-width: 60vw;
+          }
+        }
+      }
+
+      & .design-content-img {
+        flex: 1;
+        & img {
+          width: 80%;
+          @media only screen and (max-width: 600px) {
+            margin-bottom: 6.4444vw;
+          }
+        }
+      }
+    }
+  }
+
+  & .sub-list {
+    margin-top: 2.6455vw;
+
+    & li {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.1905vw;
+      line-height: 1.44;
+      letter-spacing: -0.0317vw;
+      color: #2f2f2f;
+      display: flex;
+      align-items: center;
+      gap: 0.6964vw;
+
+      margin-top: 1.0582vw;
+
+      & img {
+        width: 1.3512vw;
+        height: 1.3512vw;
+        @media only screen and (max-width: 600px) {
+          width: 2.8361vw;
+          height: 2.8361vw;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 3.4222vw;
+      }
+    }
+  }
+}

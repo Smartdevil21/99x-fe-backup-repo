@@ -1,0 +1,112 @@
+@import "../../assets/scss/breakpoints.scss";
+.modal-content {
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+}
+.signup-box {
+	.signup-form-group {
+		display: flex;
+		width: 80%;
+		border: 1px solid #7a7a7a;
+		border-radius: 4px;
+		font-family: "neue-haas-grotesk-display";
+		border-radius: 0.3vw;
+		margin-top: 3vw;
+        @include breakpoint(mobile) {
+            border-radius: 1vw;
+            width: 90%;
+        }
+		input {
+			width: 100%;
+			// height: 80%;
+			border: 0px;
+			outline: 0px;
+			margin: 1px;
+			padding: 0.7vw;
+			outline: 0px;
+			margin: 1px;
+			font-size: 1vw;
+
+			background-color: transparent;
+			@include breakpoint(mobile) {
+				padding: 2vw;
+				font-size: 3vw;
+			}
+		}
+		button.submit {
+			padding: 0.6vw 1vw;
+			margin: 0.4%;
+			width: 40%;
+			font-size: 1.2vw;
+			background: var(--color-primary);
+			font-weight: 700;
+			border: 0px;
+			border-radius: 0.3vw;
+			color: #fff;
+			@include breakpoint(mobile) {
+				border-radius: 1vw;
+				padding: 2vw;
+				font-size: 3vw;
+			width: 40%;
+        }
+			i {
+				font-size: 1vw;
+				border: 1px solid #fff;
+				border-radius: 50%;
+				width: 1.5vw;
+				height: 1.5vw;
+				margin-left: 0.4vw;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+				@include breakpoint(mobile) {
+				margin-left: 2vw;
+                padding: 2vw;
+					font-size: 2vw;
+				}
+			}
+		}
+	}
+	.signup-form-inputs {
+		input {
+			width: 98%;
+			border: 1px solid #b0b0b0;
+			border-radius: 4px;
+			padding: 7px 15px;
+			outline: 0px;
+			font-size: 14px;
+			line-height: 30px;
+			background-color: transparent;
+		}
+		div {
+			flex: 1;
+		}
+		.nameinput-container {
+			text-align: left;
+		}
+		.phoneinput-container {
+			text-align: right;
+		}
+
+		padding: 10px 0px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.offer {
+		color: var(--color-secondary);
+		font-size: 14px;
+		text-decoration: underline;
+		font-weight: 700;
+		cursor: pointer;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.signup-box {
+		.offer {
+			margin-top: 9px;
+			text-align: center;
+		}
+	}
+}

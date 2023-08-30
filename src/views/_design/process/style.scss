@@ -1,0 +1,221 @@
+@import "../../../assets/scss/colours.scss";
+@import "../../../assets/scss/breakpoints.scss";
+
+.services-hero {
+  margin-top: 2vw;
+  margin-left: 6.6138vw;
+  margin-right: 6.6138vw;
+
+  & .hero-header {
+    & .top {
+      & h2 {
+        margin-top: 7vw;
+        font-weight: 700;
+        font-size: 1.0582vw;
+        line-height: 1.3228vw;
+        letter-spacing: -0.0311vw;
+        color: #fc5555;
+      }
+    }
+
+    & .bottom {
+      margin-top: 0.7937vw;
+      display: flex;
+      justify-content: center;
+      gap: 25vw;
+      & .left {
+        flex: 1 1 50%;
+        & h1 {
+          font-weight: 700;
+          font-size: 3.1746vw;
+          line-height: 1.17;
+          letter-spacing: -0.0311vw;
+        }
+      }
+      & .right {
+        flex: 1 1 50%;
+        // margin-top: -21.7593vw;
+        & p {
+          font-weight: 400;
+          font-size: 1.1905vw;
+          line-height: 1.44;
+          letter-spacing: -0.0066vw;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .hero-body {
+    margin-top: 2.6455vw;
+    display: flex;
+    justify-content: center;
+    gap: 13vw;
+
+    .services-hero-img-container {
+      flex: 1 1 70%;
+      display: flex;
+      align-items: center;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0vw;
+      }
+    }
+
+    .services-hero-right {
+      flex: 1 1 50%;
+      margin-top: -9.2592vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .custom-accord-2 {
+      width: 100%;
+      display: flex;
+      padding: 10px 0px;
+      font-family: "neue-haas-grotesk-display";
+      display: flex;
+      gap: 2.1355vw;
+      max-width: 30vw;
+
+      & .custom-accord-2-left-bar {
+        // background-color: #fc5555;
+        align-self: stretch;
+        flex: 0 0 0.2645vw;
+        background-color: #eaeaea;
+        border-radius: 3.1746vw;
+        transition: all 0.2s ease-in;
+      }
+
+      & .custom-accord-2-inner {
+        flex: 1;
+        transition: all 0.3s ease-out;
+      }
+
+      & .custom-accord-2-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & span {
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1.34;
+          color: #808080;
+          font-size: 1.5873vw;
+        }
+        & .fa-chevron-down {
+          transition: all 0.3s ease-out;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      & .custom-accord-2-body {
+        margin-top: 0.8597vw;
+
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      & p {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        font-size: 1.0582vw;
+        letter-spacing: 0.1vw;
+        color: #2f2f2f;
+      }
+
+      &.active {
+        & .custom-accord-2-left-bar {
+          background-color: #fc5555;
+        }
+
+        & .custom-accord-2-head {
+          & .fa-chevron-down {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services-hero {
+    margin-top: 2vw;
+    margin-left: 6.6138vw;
+    margin-right: 6.6138vw;
+
+    & .hero-header {
+      & .top {
+        & h2 {
+          font-size: 3.0582vw;
+        }
+      }
+
+      & .bottom {
+        margin-top: 0.7937vw;
+        display: block;
+        & .left {
+          & h1 {
+            font-weight: 700;
+            font-size: 6.9746vw;
+            margin-right: 15vw;
+          }
+        }
+        & .right {
+          & p {
+            font-size: 3.6905vw;
+            margin-right: 12vw;
+          }
+        }
+      }
+    }
+    .hero-body {
+      margin-top: 2.6455vw;
+      display: block;
+      gap: 13vw;
+
+      .services-hero-img-container {
+        // flex: 1 1 70%;
+        // display: flex;
+        // align-items: center;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          margin-left: 0vw;
+        }
+      }
+
+      .services-hero-right {
+        // flex: 1 1 50%;
+        margin-top: 4.2592vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .custom-accord-2 {
+        max-width: 80vw;
+
+        & .custom-accord-2-left-bar {
+          flex: 0 0 0.8645vw;
+        }
+
+        & .custom-accord-2-head {
+          & span {
+            font-size: 5.08873vw;
+          }
+        }
+        & p {
+          font-size: 3.8882vw;
+        }
+      }
+    }
+  }
+}

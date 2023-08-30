@@ -1,0 +1,260 @@
+.about-us-page {
+  .header-container {
+    display: flex;
+    align-items: center;
+
+    // gap: 12vw;
+    .left {
+      .about-Heading {
+        font-size: 4.7887vw;
+        font-weight: 700;
+        color: #000000;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 6.6667vw;
+          width: 55.5556vw;
+          height: 25vw;
+        }
+
+        span {
+          color: #ff6d3e;
+          font-size: inherit;
+          text-decoration: underline;
+        }
+      }
+
+      img {
+        width: 80% !important;
+      }
+    }
+
+    .right {
+      padding-left: 0;
+      padding-right: 0;
+
+      @media only screen and (max-width: 600px) {
+        // width: 66.3889vw;
+        height: 27.2222vw;
+      }
+
+      h4 {
+        margin-left: 8vw;
+        font-weight: 600;
+        font-size: 1.2873vw;
+        line-height: 1.33;
+        letter-spacing: 0.0817vw;
+
+        @media only screen and (max-width: 600px) {
+          margin-left: 3vw;
+          font-size: 4.4873vw;
+          letter-spacing: 0.1817vw;
+          padding: 1vw;
+          // width: 90vw;
+        }
+      }
+
+      p {
+        margin-left: 8vw;
+        margin-top: 3.3069vw;
+        font-weight: 400;
+        font-size: 1.2873vw;
+        line-height: 1.33;
+        letter-spacing: 0.0317vw;
+
+        @media only screen and (max-width: 600px) {
+          margin-left: 3vw;
+          padding: 1vw;
+          // font-size: 2.5873vw;
+          font-size: 4.2228vw;
+          letter-spacing: 0.1917vw;
+          // width: 90vw;
+        }
+      }
+    }
+  }
+}
+
+div.hero {
+  margin: 64px auto;
+}
+
+div.section-img {
+  position: relative;
+  width: 100%;
+  height: 49.9339vw;
+  @media screen and (max-width: 600px) {
+    margin-top: 30vw;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .heading-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    h2 {
+      font-weight: 700;
+      font-size: 8.5979vw;
+      line-height: 10.8466vw;
+      letter-spacing: -0.0582vw;
+      color: #fff;
+      max-width: 64.6164vw;
+      text-align: center;
+      margin-bottom: 3.9683vw;
+    }
+  }
+}
+
+div.phill {
+  margin: 10vw auto;
+
+  h2 {
+    text-align: center;
+    margin: 8px auto;
+    font-size: 3.1746vw;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 6vw;
+      letter-spacing: 0.1917vw;
+    }
+  }
+
+  p.sub-title {
+    text-align: center;
+    margin: 8px 10px;
+    max-width: 1074px;
+    font-size: 1.5873vw;
+    // font-size: 4.2vw;
+
+    @media only screen and (max-width: 600px) {
+      margin: 8px auto;
+      // width: 63.3333vw;
+      height: 6.1111vw;
+      font-size: 3.8vw;
+
+      letter-spacing: 0.1917vw;
+    }
+  }
+
+  .x-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+    align-items: center;
+
+    margin: 73px auto;
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+
+    img {
+      width: 80%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+
+    .text {
+      max-width: 560px;
+      padding: 40px;
+
+      h3 {
+        font-weight: 700;
+        font-size: 1.9841vw;
+        color: #2f2f2f;
+        letter-spacing: -0.48px;
+      }
+
+      p {
+        font-size: 1.5873vw;
+        color: #2f2f2f;
+        letter-spacing: 0.48px;
+      }
+    }
+  }
+
+  .about-for-mobile {
+    display: none;
+
+    @media only screen and (max-width: 600px) {
+      display: block;
+      margin-top: 10vw;
+
+      // margin-right: 10vw;
+      .item-container {
+        .item-container-image {
+          img {
+            width: 66.1111vw;
+            height: auto;
+            margin-left: 15.7222vw;
+          }
+        }
+
+        .item-container-text {
+          h3 {
+            font-weight: 700;
+            font-size: 4.2889vw;
+            line-height: 15.5556vw;
+            text-align: center;
+            margin-top: -2vw;
+            margin-bottom: -4vw;
+          }
+          p {
+            width: 70.8333vw;
+            height: 9.3333vw;
+            // font-family: 'Neue Haas Grotesk Display Pro';
+            font-style: normal;
+            font-weight: 500;
+            // font-size: 2.4222vw;
+            font-size: 3.6vw;
+            line-height: 3.8778vw;
+            // display: flex;
+            // align-content: center;
+            text-align: center;
+            letter-spacing: 0.48px;
+            margin: auto;
+            margin-bottom: 18vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+div.open-to-all {
+  text-align: center;
+
+  h2 {
+    margin: 16px auto;
+    font-size: 48px;
+    color: #2f2f2f;
+    letter-spacing: -0.48px;
+  }
+
+  p {
+    margin: 16px auto;
+    max-width: 1100px;
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    color: #2f2f2f;
+  }
+
+  img {
+    margin-top: 40px;
+    width: 100%;
+  }
+}

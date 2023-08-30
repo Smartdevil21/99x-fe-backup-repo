@@ -1,0 +1,857 @@
+.animation_section {
+  padding-top: 2vw;
+
+  .description {
+    display: flex;
+    padding: 5.2vw 7vw;
+
+    @media (max-width: 420px) {
+      flex-direction: column;
+      padding: 12.2vw 7.2vw;
+    }
+
+    .stack {
+      flex-basis: 61%;
+
+      .stack_div {
+        width: 24vw;
+        font-weight: 700;
+        font-size: 3.1vw;
+        line-height: 3.5vw;
+        color: #2f2f2f;
+        @media (max-width: 420px) {
+          width: auto;
+          font-size: 7vw;
+          line-height: normal;
+        }
+      }
+
+      @media (max-width: 756px) {
+        flex: 1;
+      }
+    }
+    .description_line {
+      font-weight: 500;
+      flex: 1;
+      font-size: 1.28vw;
+      margin-top: 0.4vw;
+      line-height: 1.7vw;
+      word-spacing: 0.2vw;
+
+      @media (max-width: 756px) {
+        font-size: 2.5vw;
+      }
+
+      @media (max-width: 420px) {
+        font-size: 3.8vw;
+        padding-block: 5vw;
+        padding-bottom: 3vw;
+        line-height: 5.58vw;
+        font-size: 3.55vw;
+      }
+    }
+  }
+
+  .gradient {
+    text-align: center;
+    margin-top: 2.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    // transition: 700ms all;
+    position: relative;
+    padding-top: 8vw;
+    background-color: white;
+
+    .gradient_heading {
+      margin-top: 5vw;
+      margin-bottom: 4.5vw;
+      position: absolute;
+      top: -1vw;
+
+      @media (max-width: 420px) {
+        top: 0vw;
+      }
+
+      div:nth-child(1) {
+        color: #f52f57;
+        font-weight: 600;
+        font-size: 1.4vw;
+        text-transform: uppercase;
+
+        @media (max-width: 756px) {
+          font-size: 4.5vw;
+        }
+
+        @media (max-width: 420px) {
+          font-size: 5.8vw;
+        }
+      }
+      div:nth-child(2) {
+        color: #2f2f2f;
+        font-weight: 600;
+        font-size: 2.3vw;
+        // margin-bottom: 2vw;
+
+        @media (max-width: 756px) {
+          font-size: 5.5vw;
+        }
+
+        @media (max-width: 420px) {
+          font-size: 6.5vw;
+        }
+      }
+    }
+
+    .gradient_circle_text {
+      color: white;
+      font-size: 3vw;
+      font-weight: 900;
+      font-family: "neue-haas-grotesk-display-black";
+      letter-spacing: 0.1vw;
+
+      @media (max-width: 756px) {
+        font-size: 5.5vw;
+      }
+
+      @media (max-width: 420px) {
+        font-size: 8.5vw;
+      }
+    }
+
+    .gradient_circle {
+      margin-top: 8vw;
+      height: 38vw;
+      width: 38vw;
+      margin-bottom: 5.2vw;
+      border-radius: 100vw;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://99xassets.s3.ap-south-1.amazonaws.com/gradient.gif");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: all 1s;
+
+      @media (max-width: 756px) {
+        height: 50vw;
+        width: 50vw;
+      }
+
+      @media (max-width: 420px) {
+        height: 93vw;
+        width: 93vw;
+        margin-bottom: 15.2vw;
+        margin-top: 22vw;
+      }
+    }
+
+    .arrows {
+      position: absolute;
+      bottom: 7vw;
+      left: 7.9vw;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2vw;
+      cursor: pointer;
+      z-index: 1;
+      align-items: center;
+
+      @media (max-width: 420px) {
+        gap: 3vw;
+      }
+
+      .arrow_btw_line {
+        width: 4vw;
+        @media (max-width: 420px) {
+          width: 12vw;
+        }
+      }
+
+      .arrow_up,
+      .arrow_down {
+        svg {
+          @media (min-width: 586px) {
+            display: block;
+            width: 1.5vw;
+            height: 1.5vw;
+          }
+        }
+      }
+    }
+
+    .gradient_first {
+      background: transparent;
+      //   padding: 0.5vw 2.8vw 1vw;
+      width: 33vw;
+      text-align: left;
+      position: absolute;
+      bottom: 15vw;
+      left: 3.5vw;
+      backdrop-filter: blur(3.87097px);
+
+      @media (max-width: 756px) {
+        bottom: 16vw;
+        width: 40vw;
+      }
+
+      @media (max-width: 420px) {
+        bottom: 28vw;
+        left: 4vw;
+        width: 100%;
+      }
+
+      svg {
+        @media (max-width: 786px) {
+        }
+        @media (max-width: 420px) {
+        }
+      }
+
+      .gradient_heading_absolute {
+        color: #2f2f2f;
+        font-weight: 900;
+        font-size: 1.6vw;
+        margin-bottom: 1.2vw;
+        line-height: 1.8vw;
+        display: none;
+
+        @media (max-width: 786px) {
+          font-size: 2.6vw;
+          margin-bottom: 1.2vw;
+          line-height: normal;
+          margin-top: -3vw;
+        }
+        @media (max-width: 420px) {
+          font-size: 5.6vw;
+          margin-bottom: 1.2vw;
+          line-height: normal;
+          margin-top: -3vw;
+        }
+      }
+      .gradient_description {
+        font-weight: 400;
+        font-size: 1.2vw;
+        color: #676767;
+        display: none;
+
+        @media (max-width: 786px) {
+          font-size: 1.5vw;
+        }
+
+        @media (max-width: 420px) {
+          font-size: 3.6vw;
+        }
+      }
+    }
+    .gradient_second {
+      background: transparent;
+      width: 35vw;
+      text-align: left;
+      position: absolute;
+      bottom: 6.5vw;
+      right: 2vw;
+      backdrop-filter: blur(3.87097px);
+
+      @media (max-width: 756px) {
+        bottom: 12vw;
+        width: 40vw;
+      }
+
+      @media (max-width: 420px) {
+        width: 100%;
+        bottom: 8vw;
+        right: -24vw;
+      }
+
+      .gradient_heading_absolute {
+        color: #2f2f2f;
+        font-weight: 700;
+        font-size: 1.8vw;
+        margin-bottom: 1.2vw;
+        line-height: 1.8vw;
+
+        @media (max-width: 786px) {
+          font-size: 2.6vw;
+          margin-bottom: 1.2vw;
+          line-height: normal;
+          margin-top: -3vw;
+        }
+        @media (max-width: 420px) {
+          font-size: 5.6vw;
+          margin-bottom: 1.2vw;
+          line-height: normal;
+          margin-top: -3vw;
+        }
+      }
+      .gradient_description {
+        font-weight: 400;
+        font-size: 1.2vw;
+        color: #676767;
+        line-height: 2vw;
+
+        @media (max-width: 786px) {
+          font-size: 1.5vw;
+          line-height: normal;
+        }
+
+        @media (max-width: 420px) {
+          font-size: 3.6vw;
+          line-height: normal;
+        }
+      }
+    }
+
+    .gradient_third {
+      position: absolute;
+      top: 10vw;
+
+      @media (max-width: 786px) {
+        position: absolute;
+        top: 23vw;
+        left: 16vw;
+      }
+
+      @media (max-width: 420px) {
+        position: absolute;
+        top: 32vw;
+        left: 5vw;
+      }
+
+      img {
+        width: 56vw;
+        border-radius: 1vw;
+
+        @media (max-width: 786px) {
+          width: 65vw;
+          border-radius: 2vw;
+        }
+
+        @media (max-width: 420px) {
+          width: 88vw;
+          border-radius: 1.5vw;
+        }
+      }
+
+      .side_modal {
+        position: absolute;
+        top: 6vw;
+        width: 24vw;
+        right: -8vw;
+        background: white;
+        padding: 2.2vw;
+        padding-right: 2.8vw;
+        border-radius: 0.5vw;
+        text-align: left;
+        background-color: #f8f8f8;
+
+        @media (max-width: 786px) {
+          position: absolute;
+          top: 10vw;
+          width: 40vw;
+          right: -4vw;
+          background: white;
+          padding: 3.2vw;
+          border-radius: 0.5vw;
+          text-align: left;
+          background-color: #f8f8f8;
+        }
+
+        @media (max-width: 420px) {
+          position: absolute;
+          top: 41vw;
+          width: 64vw;
+          right: -2vw;
+          background: white;
+          padding: 3.2vw;
+          border-radius: 0.8vw;
+          text-align: left;
+          background-color: #f8f8f8;
+        }
+      }
+
+      div:first-child {
+        font-size: 1.5vw;
+        font-weight: 700;
+        margin-bottom: 0.8vw;
+
+        @media (max-width: 786px) {
+          font-size: 3vw;
+          font-weight: 700;
+          margin-bottom: 0.8vw;
+        }
+        @media (max-width: 420px) {
+          font-size: 4.5vw;
+          font-weight: 700;
+          margin-bottom: 1.8vw;
+        }
+      }
+      .side_modal_3_description {
+        line-height: 1.8vw;
+        color: #676767;
+        margin-bottom: 0.8vw;
+
+        @media (max-width: 786px) {
+          line-height: 2.8vw;
+          font-size: 2vw;
+          color: #676767;
+          margin-bottom: 1.8vw;
+        }
+
+        @media (max-width: 420px) {
+          line-height: 5vw;
+          color: #676767;
+          font-size: 3.2vw;
+          margin-bottom: 1.8vw;
+        }
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1vw;
+        color: #606060;
+        font-size: 1vw;
+        font-weight: 700;
+
+        @media (max-width: 786px) {
+          font-size: 2vw;
+        }
+        @media (max-width: 420px) {
+          margin-bottom: 1vw;
+          font-size: 3vw;
+        }
+
+        svg {
+          margin-right: 0.5vw;
+
+          @media (max-width: 420px) {
+            width: 4.5vw;
+          }
+        }
+      }
+    }
+
+    .gradient_four {
+      position: absolute;
+      top: 12vw;
+
+      @media (max-width: 786px) {
+        position: absolute;
+        top: 23vw;
+        left: 16vw;
+      }
+
+      @media (max-width: 420px) {
+        position: absolute;
+        top: 34vw;
+        left: 2vw;
+      }
+
+      img {
+        width: 58vw;
+        border-radius: 1vw;
+
+        @media (max-width: 786px) {
+          width: 65vw;
+          border-radius: 2vw;
+        }
+
+        @media (max-width: 420px) {
+          width: 94vw;
+          border-radius: 1.5vw;
+        }
+      }
+
+      .side_modal {
+        position: absolute;
+        top: 7vw;
+        width: 25vw;
+        right: -12vw;
+        background: white;
+        padding: 4.5vw 2.2vw;
+        border-radius: 0.5vw;
+        text-align: left;
+        background: #f8f8f8;
+
+        @media (max-width: 786px) {
+          position: absolute;
+          top: 10vw;
+          width: 40vw;
+          right: -4vw;
+          background: white;
+          padding: 3.2vw;
+          border-radius: 0.5vw;
+          text-align: left;
+          background-color: #f8f8f8;
+        }
+
+        @media (max-width: 420px) {
+          position: absolute;
+          top: 30vw;
+          width: 65vw;
+          right: -1vw;
+          background: white;
+          padding: 4.2vw;
+          border-radius: 1.5vw;
+          text-align: left;
+          background-color: #f8f8f8;
+        }
+      }
+
+      .side_modal_heading {
+        font-size: 1.5vw;
+        font-weight: 700;
+        margin-bottom: 0.8vw;
+
+        @media (max-width: 786px) {
+          font-size: 3vw;
+          font-weight: 700;
+          margin-bottom: 0.8vw;
+        }
+
+        @media (max-width: 420px) {
+          font-size: 4.5vw;
+          font-weight: 700;
+          margin-bottom: 1.8vw;
+        }
+      }
+
+      .side_modal_description {
+        line-height: 1.8vw;
+        color: #676767;
+        margin-bottom: 0.8vw;
+
+        @media (max-width: 786px) {
+          line-height: 2.8vw;
+          font-size: 2vw;
+          color: #676767;
+          margin-bottom: 1.8vw;
+        }
+
+        @media (max-width: 420px) {
+          line-height: 5vw;
+          color: #676767;
+          font-size: 3.2vw;
+          margin-bottom: 0.8vw;
+        }
+      }
+    }
+    .gradient_five {
+      position: absolute;
+      top: 10vw;
+
+      @media (max-width: 786px) {
+        position: absolute;
+        top: 23vw;
+        left: 16vw;
+      }
+
+      @media (max-width: 420px) {
+        position: absolute;
+        top: 33vw;
+        left: 2vw;
+      }
+
+      img {
+        width: 59vw;
+        border-radius: 1vw;
+
+        @media (max-width: 786px) {
+          width: 65vw;
+          border-radius: 2vw;
+        }
+
+        @media (max-width: 420px) {
+          width: 89vw;
+          border-radius: 1.5vw;
+        }
+      }
+
+      .side_modal {
+        position: absolute;
+        top: 7vw;
+        width: 25vw;
+        right: -12vw;
+        background: white;
+        padding: 8.5vw 2.2vw;
+        border-radius: 0.5vw;
+        text-align: left;
+        background: #f8f8f8;
+
+        @media (max-width: 786px) {
+          position: absolute;
+          top: 20vw;
+          width: 40vw;
+          right: -4vw;
+          background: white;
+          padding: 3.2vw;
+          border-radius: 0.5vw;
+          text-align: left;
+          background-color: #f8f8f8;
+        }
+
+        @media (max-width: 420px) {
+          position: absolute;
+          top: 25vw;
+          width: 65vw;
+          right: -6vw;
+          background: white;
+          padding: 6vw 5.2vw 13vw;
+          border-radius: 1.5vw;
+          text-align: left;
+          background-color: #f8f8f8;
+        }
+      }
+
+      .side_modal_heading {
+        font-size: 1.5vw;
+        font-weight: 700;
+        margin-bottom: 0.8vw;
+
+        @media (max-width: 786px) {
+          font-size: 3vw;
+          font-weight: 700;
+          margin-bottom: 0.8vw;
+        }
+
+        @media (max-width: 420px) {
+          font-size: 4.5vw;
+          font-weight: 700;
+          margin-bottom: 1.8vw;
+        }
+      }
+      .side_modal_description {
+        line-height: 1.8vw;
+        color: #676767;
+        margin-bottom: 0.8vw;
+
+        @media (max-width: 786px) {
+          line-height: 2.8vw;
+          font-size: 2vw;
+          color: #676767;
+          margin-bottom: 1.8vw;
+        }
+
+        @media (max-width: 420px) {
+          line-height: 5vw;
+          color: #676767;
+          font-size: 3.2vw;
+          margin-bottom: 0.8vw;
+        }
+      }
+    }
+    .gradient_six {
+      position: absolute;
+      top: 10vw;
+
+      @media (max-width: 786px) {
+        position: absolute;
+        top: 23vw;
+        left: 16vw;
+      }
+
+      @media (max-width: 420px) {
+        position: absolute;
+        top: 33vw;
+        left: 2vw;
+      }
+
+      img {
+        width: 59vw;
+        border-radius: 1vw;
+
+        @media (max-width: 786px) {
+          width: 65vw;
+          border-radius: 2vw;
+        }
+
+        @media (max-width: 420px) {
+          width: 89vw;
+          border-radius: 1.5vw;
+        }
+      }
+
+      .side_modal {
+        position: absolute;
+        top: 7vw;
+        width: 25vw;
+        right: -12vw;
+        background: white;
+        padding: 8.5vw 2.2vw;
+        border-radius: 0.5vw;
+        text-align: left;
+        background: #f8f8f8;
+
+        @media (max-width: 786px) {
+          position: absolute;
+          top: 20vw;
+          width: 40vw;
+          right: -4vw;
+          background: white;
+          padding: 3.2vw;
+          border-radius: 0.5vw;
+          text-align: left;
+          background-color: #f8f8f8;
+        }
+
+        @media (max-width: 420px) {
+          position: absolute;
+          top: 25vw;
+          width: 65vw;
+          right: -6vw;
+          background: white;
+          padding: 6vw 5.2vw 13vw;
+          border-radius: 1.5vw;
+          text-align: left;
+          background-color: #f8f8f8;
+        }
+      }
+
+      .side_modal_heading {
+        font-size: 1.5vw;
+        font-weight: 700;
+        margin-bottom: 0.8vw;
+
+        @media (max-width: 786px) {
+          font-size: 3vw;
+          font-weight: 700;
+          margin-bottom: 0.8vw;
+        }
+
+        @media (max-width: 420px) {
+          font-size: 4.5vw;
+          font-weight: 700;
+          margin-bottom: 1.8vw;
+        }
+      }
+      .side_modal_description {
+        line-height: 1.8vw;
+        color: #676767;
+        margin-bottom: 0.8vw;
+
+        @media (max-width: 786px) {
+          line-height: 2.8vw;
+          font-size: 2vw;
+          color: #676767;
+          margin-bottom: 1.8vw;
+        }
+
+        @media (max-width: 420px) {
+          line-height: 5vw;
+          color: #676767;
+          font-size: 3.2vw;
+          margin-bottom: 0.8vw;
+        }
+      }
+    }
+    .gradient_seven {
+      position: absolute;
+      top: 10vw;
+
+      @media (max-width: 786px) {
+        position: absolute;
+        top: 23vw;
+        left: 16vw;
+      }
+
+      @media (max-width: 420px) {
+        position: absolute;
+        top: 26vw;
+        left: 2vw;
+      }
+
+      img {
+        width: 59vw;
+        border-radius: 1vw;
+
+        @media (max-width: 786px) {
+          width: 65vw;
+          border-radius: 2vw;
+        }
+
+        @media (max-width: 420px) {
+          width: 89vw;
+          border-radius: 1.5vw;
+        }
+      }
+
+      .side_modal {
+        position: absolute;
+        top: 7vw;
+        width: 25vw;
+        right: -12vw;
+        background: white;
+        padding: 8.5vw 2.2vw;
+        border-radius: 0.5vw;
+        text-align: left;
+        background: #f8f8f8;
+
+        @media (max-width: 786px) {
+          position: absolute;
+          top: 20vw;
+          width: 40vw;
+          right: -4vw;
+          background: white;
+          padding: 3.2vw;
+          border-radius: 0.5vw;
+          text-align: left;
+          background-color: #f8f8f8;
+        }
+
+        @media (max-width: 420px) {
+          position: absolute;
+          top: 25vw;
+          width: 65vw;
+          right: -6vw;
+          background: white;
+          padding: 6vw 5.2vw 13vw;
+          border-radius: 1.5vw;
+          text-align: left;
+          background-color: #f8f8f8;
+        }
+      }
+
+      .side_modal_heading {
+        font-size: 1.5vw;
+        font-weight: 700;
+        margin-bottom: 0.8vw;
+
+        @media (max-width: 786px) {
+          font-size: 3vw;
+          font-weight: 700;
+          margin-bottom: 0.8vw;
+        }
+
+        @media (max-width: 420px) {
+          font-size: 4.5vw;
+          font-weight: 700;
+          margin-bottom: 1.8vw;
+        }
+      }
+      .side_modal_description {
+        line-height: 1.8vw;
+        color: #676767;
+        margin-bottom: 0.8vw;
+
+        @media (max-width: 786px) {
+          line-height: 2.8vw;
+          font-size: 2vw;
+          color: #676767;
+          margin-bottom: 1.8vw;
+        }
+
+        @media (max-width: 420px) {
+          line-height: 5vw;
+          color: #676767;
+          font-size: 3.2vw;
+          margin-bottom: 0.8vw;
+        }
+      }
+    }
+  }
+}

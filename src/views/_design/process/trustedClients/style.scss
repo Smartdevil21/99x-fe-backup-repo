@@ -1,0 +1,186 @@
+@import "../../../../assets/scss/colours.scss";
+@import "../../../../assets/scss/breakpoints.scss";
+
+.trusted-clients-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12.24vw;
+  padding-right: 5.3571vw;
+  background-color: #f5f5f5;
+
+  & .trusted-clients-left {
+    flex: 1;
+
+    & h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.1746vw;
+      line-height: 1.33;
+      letter-spacing: -0.0119vw;
+      color: #2f2f2f;
+      max-width: 30.4232vw;
+
+      & span {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.1746vw;
+        line-height: 1.33;
+        letter-spacing: -0.0119vw;
+        color: #ff6666;
+      }
+    }
+
+    & p {
+      font-family: "neue-haas-grotesk-display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.3228vw;
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      color: #2f2f2f;
+      max-width: 30.4232vw;
+      margin-top: 1.8518vw;
+    }
+
+    & .btn {
+      navLink {
+        color: #fff !important;
+      }
+      margin-top: 2.1164vw;
+      background-color: #6931c4;
+      padding: 1.1243vw 2.3809vw;
+      width: 18.5185vw;
+      border: 0;
+      color: #fff !important;
+      border-radius: 0.2645vw;
+      font-family: "neue-haas-grotesk-display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.1904vw;
+      line-height: 1.2778v2;
+    }
+  }
+
+  & .trusted-clients-right {
+    flex: 1;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+.trusted-clients-container.red {
+  background-color: #f52f57;
+
+  & .trusted-clients-left {
+    flex: 1;
+
+    & h2 {
+      color: #fff;
+      & span {
+        color: #fff;
+      }
+    }
+
+    & p {
+      color: #fff;
+    }
+
+    & button {
+      color: #f52f57;
+      // background-color: #fff;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .trusted-clients-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    justify-content: center;
+
+    & .trusted-clients-left {
+      flex: 1;
+      text-align: center;
+
+      & h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6.67vw;
+        line-height: 8.89vw;
+        letter-spacing: -0.05vw;
+        color: #2f2f2f;
+        max-width: 110.4232vw;
+
+        & span {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 6.67vw;
+          line-height: 8.89vw;
+          letter-spacing: -0.05vw;
+          color: #ff6666;
+        }
+      }
+
+      & p {
+        font-family: "neue-haas-grotesk-display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.8228vw;
+        line-height: 1.6;
+        display: flex;
+        align-items: center;
+        color: #2f2f2f;
+        max-width: 100.4232vw;
+        margin-top: 1.8518vw;
+      }
+
+      & .btn {
+        navLink {
+          color: #fff !important;
+        }
+        margin-top: 0.1164vw;
+        margin-bottom: 4vw;
+        background-color: #6931c4;
+        padding: 2.1243vw 2.3809vw;
+        width: 40.5185vw;
+        border: 0;
+        color: #fff !important;
+        border-radius: 0.2645vw;
+        font-family: "neue-haas-grotesk-display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.8904vw;
+        line-height: 1.2778v2;
+      }
+    }
+
+    & .trusted-clients-right {
+      flex: 1;
+
+      & img {
+        margin-top: 6vw;
+        margin-bottom: 5vw;
+        width: 90%;
+      }
+    }
+  }
+
+  .reverse-col{
+    flex-direction: column;
+    padding: 15.84vw 4.44vw 0 4.44vw;
+
+    .trusted-clients-left{
+      .btn{
+       width: 92vw;
+       margin-top: 6vw;
+     }
+
+    }
+
+  }
+}

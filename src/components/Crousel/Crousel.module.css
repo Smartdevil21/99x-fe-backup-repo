@@ -1,0 +1,229 @@
+
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1580/800;
+}
+
+.carouselItem {
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.carouselItem:not(.carouselItemLeft,
+  .carouselItemRight,
+  .carouselItemCenter,
+  .animationCenterToLeft,
+  .animationRightToCenter,
+  .animationLeftToCenter,
+  .animationCenterToRight) {
+  display: none;
+}
+
+.carouselItem:not(.carouselItemLeft,.carouselItemRight){
+  border-radius:2.5%;
+}
+
+.carouselItemCenter {
+  inset: 50%;
+  translate: -50% -50%;
+  z-index: 1;
+  width: 66.67%;
+  aspect-ratio: 960/720;
+
+}
+
+.carouselItemLeft {
+  inset: 50% 0;
+  translate: 0 -50%;
+  animation: delayLoadPseudoItem 1s linear forwards;
+
+  width: 12.22%;
+  aspect-ratio: 176/585;
+}
+
+.carouselItemRight {
+  right: 0;
+  top: 50%;
+  translate: 0 -50%;
+
+  animation: delayLoadPseudoItem 1s ease-in-out forwards;
+
+  width: 12.22%;
+  aspect-ratio: 176/585;
+}
+
+.animationCenterToLeft {
+  animation: centerToLeft 1s ease-in-out forwards;
+}
+
+.animationCenterToRight {
+  animation: centerToRight 1s ease-in-out forwards;
+}
+
+.animationRightToCenter {
+  animation: rightToCenter 1s ease-in-out forwards;
+}
+
+.animationLeftToCenter {
+  animation: leftToCenter 1s ease-in-out forwards;
+}
+
+
+
+@keyframes delayLoadPseudoItem {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes centerToLeft {
+  from {
+    inset: 50%;
+    translate: -50% -50%;
+    opacity: 1;
+
+    width: 66.67%;
+    aspect-ratio: 960/720;
+
+  }
+
+  70% {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 0;
+    top: 50%;
+    left: -66.7%;
+    translate: 0 -50%;
+    z-index: 10;
+
+width: 66.7%;
+    aspect-ratio: 960/585;
+  }
+}
+
+@keyframes centerToRight {
+  from {
+    inset: 50%;
+    translate: -50% -50%;
+    opacity: 1;
+
+    width: 66.67%;
+    aspect-ratio: 960/720;
+  }
+
+  70% {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 0;
+    top: 50%;
+    right: -66.7%;
+    translate: 0 -50%;
+    z-index: 10;
+
+    width: 66.7%;
+    aspect-ratio: 960/585;
+  }
+}
+
+@keyframes rightToCenter {
+  from {
+    opacity: 0;
+    top: 50%;
+    right: -66.7%;
+    translate: 0 -50%;
+    width: 66.7%;
+    aspect-ratio: 960/585;
+  }
+
+  70% {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 1;
+    inset: 50%;
+    translate: -50% -50%;
+    width: 66.67%;
+    aspect-ratio: 960/720;
+  }
+}
+
+@keyframes leftToCenter {
+  from {
+    opacity: 0;
+    left: -66.7%;
+    top: 50%;
+    translate: 0 -50%;
+    width: 66.7%;
+    aspect-ratio: 960/585;
+  }
+
+  70% {
+    opacity: 0.6;
+  }
+
+  to {
+    inset: 50%;
+    translate: -50% -50%;
+    opacity: 1;
+
+    width: 66.67%;
+    aspect-ratio: 960/720;
+  }
+}
+
+/* Carousel Button Container */
+
+.carouselBtnContainer {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7%;
+}
+
+ @media (max-width: 768px) {
+  .carouselBtnContainer {
+    padding: 0 5%;
+  }
+} 
+
+@media (max-width:420px) {
+  .carousel {
+    aspect-ratio: 1/.8;
+  }
+
+  .carouselItemLeft,
+  .carouselItemRight {
+    display: none;
+  }
+
+  .carouselItem {
+   scale:1.47;
+  }
+
+  .carouselBtnContainer {
+    justify-content: end;
+    padding: 0 2.5%;
+  }
+
+}
+
+.slick-center {
+	transform: none;
+}

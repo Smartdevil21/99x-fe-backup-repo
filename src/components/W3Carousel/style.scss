@@ -1,0 +1,38 @@
+.w3-carousel {
+	// Owl Theme files included in Main Stylesheet
+	.owl-next {
+		z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 16vw;
+    // margin-right: -2.5vw;
+    position: absolute;
+    background: linear-gradient(90deg, #ffffff00 0%, #ffffff 118.31%);
+		div{
+			img{
+				width: 5vw;
+				margin-right: -2.5vw;
+			}
+		}
+	}
+
+	.owl-dots {
+		display: flex;
+		margin-top: 32px;
+		justify-content: center;
+		border-radius: 4px;
+	}
+	.owl-dot {
+		cursor: pointer;
+		width: 32px;
+		height: 8px;
+		background: #b0b0b0;
+	}
+	.owl-dot.active {
+		background: var(--color-primary);
+	}
+}
