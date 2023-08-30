@@ -28,7 +28,6 @@ import ReactPlayer from "react-player";
 
 export default function OurWork(props) {
   const sections = [
-    "All",
     "Website",
     "Web App",
     "Mobile App",
