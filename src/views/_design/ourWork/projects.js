@@ -5,7 +5,7 @@ const projectData = [
     description:
       "Earthy Tales offers the largest selection of organic produce in India that started with a handful of farmers with a mission to make farming more sustainable and bring fresh produce to customer's doorstep.",
     pdf: "#",
-    video: "",
+    video: "https://99x-assets.s3.amazonaws.com/earthly_tales_compressed.mp4",
     tags: ["Web Design", "UI-UX", " Illustrations"],
     industry: "Ecommerce",
   },
@@ -14,7 +14,7 @@ const projectData = [
     category: "Web App",
     description: "AI-powered enterprise grade asset management platform.",
     pdf: "#",
-    video: "https://99x-assets.s3.amazonaws.com/99x-startup-compressed.mp4",
+    video: "https://99x-assets.s3.amazonaws.com/wgt_compressed.mp4",
     tags: ["Logo & Branding", "UI-UX", "Design System"],
     industry: "SaaS, B2B",
   },
@@ -154,7 +154,7 @@ const projectData = [
     description:
       "We’ve got issues is an online news and magazine platform dwelving deep into design, art, work, style and culture.",
     pdf: "https://uiux.99xstartup.com/assest/WGT.pdf",
-    video: "",
+    video: "https://99x-assets.s3.amazonaws.com/wgt_compressed.mp4",
     tags: ["Logo & Branding", "Web Design"],
     industry: "Media",
   },
