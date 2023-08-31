@@ -240,6 +240,7 @@
 
           & .left {
             // flex: 1 1 33.7302vw;
+            width: 100%;
             height: fit-content;
             display: flex;
             justify-content: flex-start;
@@ -254,10 +255,12 @@
               height: fit-content;
               color: #707070;
               margin: 0;
+              white-space: nowrap;
             }
             & .list {
               display: flex;
               align-items: center;
+              flex-flow: row wrap;
               gap: 1.2873vw;
               height: fit-content;
               // background-color: yellow;
