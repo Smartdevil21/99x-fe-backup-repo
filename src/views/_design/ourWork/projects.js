@@ -4,8 +4,8 @@ const projectData = [
     category: "Website",
     description:
       "Earthy Tales offers the largest selection of organic produce in India that started with a handful of farmers with a mission to make farming more sustainable and bring fresh produce to customer's doorstep.",
-    pdf: "https://uiux.99xstartup.com/assest/Gausmann.pdf",
-    video: "https://99x-assets.s3.amazonaws.com/99x-startup-compressed.mp4",
+    pdf: "#",
+    video: "",
     tags: ["Web Design", "UI-UX", " Illustrations"],
     industry: "Ecommerce",
   },
@@ -13,7 +13,7 @@ const projectData = [
     client: "Inconn",
     category: "Web App",
     description: "AI-powered enterprise grade asset management platform.",
-    pdf: "https://uiux.99xstartup.com/assest/Gausmann.pdf",
+    pdf: "#",
     video: "https://99x-assets.s3.amazonaws.com/99x-startup-compressed.mp4",
     tags: ["Logo & Branding", "UI-UX", "Design System"],
     industry: "SaaS, B2B",
@@ -23,7 +23,7 @@ const projectData = [
     category: "Web App",
     description:
       "A platform that enables facilitators to deliver experiential learning programs and team building activities using gamified webinars & simulations.",
-    pdf: "https://uiux.99xstartup.com/assest/Gausmann.pdf",
+    pdf: "#",
     video: "https://99x-assets.s3.amazonaws.com/Gaminar-compressed.mp4",
     tags: ["UI-UX", "Design System"],
     industry: "SaaS",
@@ -34,7 +34,7 @@ const projectData = [
     description:
       "The world's first smart basketball hoop. Using state-of-the-art technology, the huupe tracks your shooting percentage, position on the court, speed, agility, release time, and more",
     pdf: "https://uiux.99xstartup.com/assest/Huppe.pdf",
-    video: "https://99x-assets.s3.amazonaws.com/Huupe-compressed.mp4v",
+    video: "https://99x-assets.s3.amazonaws.com/Huupe-compressed.mp4",
     tags: ["Web Design", "Technology"],
     industry: "Sports",
   },
@@ -53,7 +53,7 @@ const projectData = [
     category: "Website",
     description:
       "An EdTech Platform focused in North American segment that enables users to pursue their career goals with online and in-person courses that focuses on Agile principles.",
-    pdf: "https://uiux.99xstartup.com/assest/Gausmann.pdf",
+    pdf: "#",
     video: "https://99x-assets.s3.amazonaws.com/skillbook-compressed.mp4",
     tags: ["Web Design", "Technology", "Animations and Interactions"],
     industry: "EdTech",
@@ -63,7 +63,7 @@ const projectData = [
     category: "Mobile App",
     description:
       "A platform that simplifies the process of disbursing personal loans in less than 60 seconds.",
-    pdf: "https://uiux.99xstartup.com/assest/Gausmann.pdf",
+    pdf: "#",
     video: "https://99x-assets.s3.amazonaws.com/Vister-compressed.mp4",
     tags: ["Logo & Branding", "UI-UX", "Animations and Interactions"],
     industry: "FinTech",
@@ -93,7 +93,7 @@ const projectData = [
     category: "Website",
     description:
       "Digital branding & web design for a renowned fashion stylist.",
-    pdf: "https://uiux.99xstartup.com/assest/Gausmann.pdf",
+    pdf: "#",
     video: "https://99x-assets.s3.amazonaws.com/vykhari-compressed.mp4",
     tags: ["Web Design", "Technology", "Animations and Interactions"],
     industry: "Website",
@@ -123,7 +123,7 @@ const projectData = [
     category: "Website",
     description:
       "Digited builds next-generation e-learning platforms for students, educators and institutes, converging them into an ecosystem for learning.",
-    pdf: "https://uiux.99xstartup.com/assest/Gausmann.pdf",
+    pdf: "#",
     video: "https://99x-assets.s3.amazonaws.com/digital-labs-compressed.mp4",
     tags: ["Web Design"],
     industry: "EdTech",
@@ -144,7 +144,7 @@ const projectData = [
     description:
       "MVP UI-UX design of an ecommerce app that allows users to get their hands on freshest & latest fashion with ease.",
     pdf: "https://uiux.99xstartup.com/assest/Kickpick.pdf",
-    video: "https://99x-assets.s3.amazonaws.com/oto-compressed.mp4",
+    video: "",
     tags: ["UI-UX"],
     industry: "Ecommerce",
   },
@@ -154,7 +154,7 @@ const projectData = [
     description:
       "We’ve got issues is an online news and magazine platform dwelving deep into design, art, work, style and culture.",
     pdf: "https://uiux.99xstartup.com/assest/WGT.pdf",
-    video: "https://99x-assets.s3.amazonaws.com/oto-compressed.mp4",
+    video: "",
     tags: ["Logo & Branding", "Web Design"],
     industry: "Media",
   },
