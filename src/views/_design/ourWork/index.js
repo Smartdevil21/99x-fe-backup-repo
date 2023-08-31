@@ -25,6 +25,7 @@ import { useState } from "react";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import Ripples from "react-ripples";
 import ReactPlayer from "react-player";
+import { LazyLoadVideoPlayer } from "utils/LazyLoadVideo";
 
 export default function OurWork(props) {
   const sections = [
@@ -275,7 +276,7 @@ export default function OurWork(props) {
           <div className="work" key={index + project.industry}>
             <a href={project.pdf} target={"_blank"} rel="noreferrer">
               {/* <Parallax speed={10} style={{ aspectRatio: "2.4/1" }}> */}
-              <ReactPlayer
+              {/* <ReactPlayer
                 width={"100%"}
                 height="auto"
                 url={project.video}
@@ -284,8 +285,9 @@ export default function OurWork(props) {
                 loop
                 className="react-player"
                 style={{ aspectRatio: "2.4/1" }}
-              />
+              /> */}
               {/* </Parallax> */}
+              <LazyLoadVideoPlayer src={project.video} />
             </a>
 
             <a href={project.pdf} target={"_blank"} rel="noreferrer">
