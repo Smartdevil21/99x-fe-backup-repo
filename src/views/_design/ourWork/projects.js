@@ -14,7 +14,7 @@ const projectData = [
     category: "Web App",
     description: "AI-powered enterprise grade asset management platform.",
     pdf: "#",
-    video: "https://99x-assets.s3.amazonaws.com/wgt_compressed.mp4",
+    video: "https://99x-assets.s3.amazonaws.com/inconn_compressed.mp4",
     tags: ["Logo & Branding", "UI-UX", "Design System"],
     industry: "SaaS, B2B",
   },
