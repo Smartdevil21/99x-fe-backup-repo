@@ -2,6 +2,7 @@
 @import "../../../assets/scss/breakpoints.scss";
 
 .our-work-container {
+  margin-top: 5vw;
   @media screen and (max-width: 600px) {
     margin-top: 20vw;
   }

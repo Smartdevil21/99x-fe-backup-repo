@@ -190,7 +190,6 @@ export default function OurWork(props) {
           className="heading"
           style={
             props.label && {
-              marginTop: "8vw",
               color: "black",
               textDecoration: "none",
               border: "none",

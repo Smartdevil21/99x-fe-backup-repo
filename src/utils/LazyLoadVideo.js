@@ -24,7 +24,7 @@ export const LazyLoadVideoPlayer = ({ src }) => {
           style={{ aspectRatio: "2.4/1" }}
         />
       ) : (
-        <p>Loading Video</p>
+        <p>...</p>
       )}
     </div>
   );
