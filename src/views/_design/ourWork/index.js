@@ -68,19 +68,6 @@ export default function OurWork(props) {
         {filteredProjects.map((project, index) => (
           <div className="work" key={index + project.industry}>
             <a href={project.pdf} target={"_blank"} rel="noreferrer">
-              {/* <Parallax speed={10} style={{ aspectRatio: "2.4/1" }}> */}
-              {/* <ReactPlayer
-                width={"100%"}
-                height="auto"
-                url={project.video}
-                muted
-                playing
-                loop
-                className="react-player"
-                style={{ aspectRatio: "2.4/1" }}
-              /> */}
-              {/* </Parallax> */}
-              {/* <LazyLoadVideoPlayer src={project.video} /> */}
               <LazyLoadedPlayer url={project.video} />
             </a>
 
@@ -142,9 +129,9 @@ export default function OurWork(props) {
               {/* {!item.video ? (
                 <img src={item.img} alt="" />
               ) : (
-                  <LazyLoadedPlayer src={item.video} />
-              )}  */}
-              <LazyLoadedPlayer src={item.video} />
+                <LazyLoadedPlayer src={item.video} />
+              )} */}
+              <LazyLoadedPlayer url={item.video} />
             </a>
             <div className="work-bottom">
               <div className="right">
