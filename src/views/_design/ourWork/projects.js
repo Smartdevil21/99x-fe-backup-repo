@@ -109,6 +109,16 @@ const projectData = [
     industry: "SaaS. B2B",
   },
   {
+    client: "Humble",
+    category: "Web App",
+    description:
+      "A community driven platform designed for the entrepreneurs and creators to access content whether its products, blogs, podcasts, or videos.",
+    pdf: "#f",
+    video: "https://99x-assets.s3.amazonaws.com/humble-compressed.mp4",
+    tags: ["UI-UX", "Logo & Branding"],
+    industry: "Social Media",
+  },
+  {
     client: "Prosprr",
     category: "Website",
     description:
@@ -144,7 +154,7 @@ const projectData = [
     description:
       "MVP UI-UX design of an ecommerce app that allows users to get their hands on freshest & latest fashion with ease.",
     pdf: "https://uiux.99xstartup.com/assest/Kickpick.pdf",
-    video: "",
+    video: "https://99x-assets.s3.amazonaws.com/kickpick_compressed.mp4",
     tags: ["UI-UX"],
     industry: "Ecommerce",
   },
