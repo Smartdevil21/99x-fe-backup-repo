@@ -5,7 +5,7 @@ import "./style.scss";
 import projects from "./projects";
 import { useState } from "react";
 import ReactPlayer from "react-player";
-import LazyLoadedPlayer from "utils/LazyLoadVideo";
+import LazyLoadedPlayer from "utils/LazyLoadVideoPlayer";
 // import LazyLoadVideoPlayer from "utils/LazyLoadVideo";
 
 export default function OurWork(props) {
@@ -99,7 +99,7 @@ export default function OurWork(props) {
         {filteredProjects.map((project, index) => (
           <div className="work" key={index + project.industry}>
             <a
-              href={project.pdf}
+              href={`http://docs.google.com/gview?url=${project.pdf}&embedded=true`}
               className={"media_container"}
               target={"_blank"}
               rel="noreferrer"
