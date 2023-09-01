@@ -107,7 +107,11 @@ export default function OurWork(props) {
               <LazyLoadedPlayer url={project.video} />
             </a>
 
-            <a href={project.pdf} target={"_blank"} rel="noreferrer">
+            <a
+              href={`http://docs.google.com/gview?url=${project.pdf}&embedded=true`}
+              target={"_blank"}
+              rel="noreferrer"
+            >
               <div className="work-bottom">
                 <div className={"first_half"}>
                   <h3 className="title">{project.client}</h3>

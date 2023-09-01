@@ -185,8 +185,8 @@
             line-height: 150%;
             font-weight: 500;
             @media screen and (max-width: 600px) {
-              font-weight: 500;
-              font-size: 5.33vw;
+              font-weight: 600;
+              font-size: 7.33vw;
               line-height: 1.5;
               color: #2f2f2f;
               padding: 2.5vw 0;
@@ -212,6 +212,8 @@
 
           @media screen and (max-width: 600px) {
             width: 100%;
+            font-size: 4.2vw;
+            word-spacing: 0.5vw;
           }
         }
 
@@ -221,6 +223,7 @@
             display: block;
             text-decoration: underline;
             color: #f52f57;
+            font-size: 4.11vw;
           }
         }
 
