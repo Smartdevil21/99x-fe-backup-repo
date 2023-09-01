@@ -9,7 +9,14 @@ import LazyLoadedPlayer from "utils/LazyLoadVideo";
 // import LazyLoadVideoPlayer from "utils/LazyLoadVideo";
 
 export default function OurWork(props) {
-  const sections = ["Website", "Web App", "Mobile App", "Others"];
+  const sections = [
+    "Website",
+    "Web App",
+    "Mobile App",
+    "Branding",
+    "Packaging",
+    "Others",
+  ];
   const [activeSection, setActiveSection] = useState("All");
 
   const filteredProjects = useMemo(() => {
@@ -22,6 +29,10 @@ export default function OurWork(props) {
         return projects.filter((project) => project.category === "Web App");
       case "Mobile App":
         return projects.filter((project) => project.category === "Mobile App");
+      case "Branding":
+        return projects.filter((project) => project.category === "Branding");
+      case "Packaging":
+        return projects.filter((project) => project.category === "Packaging");
       case "Others":
         return projects.filter(
           (project) =>
@@ -34,7 +45,7 @@ export default function OurWork(props) {
     }
   }, [activeSection]);
 
-  console.log(filteredProjects);
+  // const handleOthersFilter = () => {};
 
   const handleSectionChange = (newSection) => {
     setActiveSection(newSection);
@@ -70,9 +81,9 @@ export default function OurWork(props) {
           return (
             <span
               key={`${section} ${index}`}
-              className={
+              className={`${
                 activeSection === sections[index] ? "active_category" : ""
-              }
+              } category_opt_${section}`}
               onClick={() => {
                 handleSectionChange(section);
               }}
@@ -87,7 +98,12 @@ export default function OurWork(props) {
         {/* ------------ video project ---------------- */}
         {filteredProjects.map((project, index) => (
           <div className="work" key={index + project.industry}>
-            <a href={project.pdf} target={"_blank"} rel="noreferrer">
+            <a
+              href={project.pdf}
+              className={"media_container"}
+              target={"_blank"}
+              rel="noreferrer"
+            >
               <LazyLoadedPlayer url={project.video} />
             </a>
 
@@ -137,7 +153,7 @@ export default function OurWork(props) {
 
         {/* ------------ video project  ends  ---------------- */}
       </div>
-      <div className="all-works-for-mobile">
+      {/* <div className="all-works-for-mobile">
         {filteredProjects.map((item, index) => (
           <div className="work" key={index + item.industry}>
             <a
@@ -146,11 +162,6 @@ export default function OurWork(props) {
               target={"_blank"}
               rel="noreferrer"
             >
-              {/* {!item.video ? (
-                <img src={item.img} alt="" />
-              ) : (
-                <LazyLoadedPlayer src={item.video} />
-              )} */}
               <LazyLoadedPlayer url={item.video} />
             </a>
             <div className="work-bottom">
@@ -172,7 +183,7 @@ export default function OurWork(props) {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
