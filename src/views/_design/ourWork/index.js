@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { BsArrowDown } from "react-icons/bs";
 import "./style.scss";
 
@@ -9,18 +9,33 @@ import LazyLoadedPlayer from "utils/LazyLoadVideo";
 // import LazyLoadVideoPlayer from "utils/LazyLoadVideo";
 
 export default function OurWork(props) {
-  const sections = [
-    "Website",
-    "Web App",
-    "Mobile App",
-    "Branding",
-    "Packaging",
-  ];
+  const sections = ["Website", "Web App", "Mobile App", "Others"];
   const [activeSection, setActiveSection] = useState("All");
-  const filteredProjects =
-    activeSection === "All"
-      ? projects
-      : projects.filter((project) => project.category === activeSection);
+
+  const filteredProjects = useMemo(() => {
+    switch (activeSection) {
+      case "All":
+        return projects;
+      case "Website":
+        return projects.filter((project) => project.category === "Website");
+      case "Web App":
+        return projects.filter((project) => project.category === "Web App");
+      case "Mobile App":
+        return projects.filter((project) => project.category === "Mobile App");
+      case "Others":
+        return projects.filter(
+          (project) =>
+            project.category !== "Website" &&
+            project.category !== "Web App" &&
+            project.category !== "Mobile App"
+        );
+      default:
+        return projects;
+    }
+  }, [activeSection]);
+
+  console.log(filteredProjects);
+
   const handleSectionChange = (newSection) => {
     setActiveSection(newSection);
   };
@@ -38,6 +53,11 @@ export default function OurWork(props) {
               fontWeight: 700,
             }
           }
+          onClick={() => {
+            if (!props.label) {
+              handleSectionChange("All");
+            }
+          }}
         >
           {!props.label ? "All Projects" : "Select Works"}{" "}
           {!props.label && <BsArrowDown />}

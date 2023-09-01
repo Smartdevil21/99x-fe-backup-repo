@@ -44,7 +44,8 @@
       }
       @media only screen and (max-width: 600px) {
         margin-top: 4vw;
-        font-size: 5.2228vw;
+        font-size: 5.5558vw;
+        font-weight: 600;
         & svg {
           font-size: 4.228vw;
         }
@@ -77,7 +78,7 @@
         background-color: transparent;
       }
       @media screen and (max-width: 600px) {
-        font-size: 2.6vw;
+        font-size: 4.16667vw;
       }
     }
     .active_category {

@@ -80,7 +80,7 @@ const projectData = [
   },
   {
     client: "Peperstreet",
-    category: "Mobile Application",
+    category: "Mobile App",
     description:
       "A video based dating app that helps people avoid boring monotonous swipes with video first profiles.",
     pdf: "https://uiux.99xstartup.com/assest/Peperstreet_compressed.pdf",
