@@ -196,6 +196,9 @@
           p {
             text-decoration: underline;
             color: #f52f57;
+            @media screen and(max-width:600px) {
+              display: none;
+            }
           }
         }
 
@@ -209,6 +212,15 @@
 
           @media screen and (max-width: 600px) {
             width: 100%;
+          }
+        }
+
+        .case_study_mobile {
+          display: none;
+          @media screen and (max-width: 600px) {
+            display: block;
+            text-decoration: underline;
+            color: #f52f57;
           }
         }
 

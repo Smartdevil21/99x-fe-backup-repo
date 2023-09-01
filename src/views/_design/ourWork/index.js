@@ -111,7 +111,7 @@ export default function OurWork(props) {
               <div className="work-bottom">
                 <div className={"first_half"}>
                   <h3 className="title">{project.client}</h3>
-                  <p>View Case Study</p>
+                  <p className="case_study_desktop">View Case Study</p>
                 </div>
 
                 <div className="categories">
@@ -126,7 +126,7 @@ export default function OurWork(props) {
                   </div>
                 </div>
                 <p className="description">{project.description}</p>
-
+                <p className="case_study_mobile">View Case Study</p>
                 {/* <div className="left">
                   <h3 className="category">{portfolio[1].category}</h3>
                   <div className="category-button">
