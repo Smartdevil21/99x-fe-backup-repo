@@ -42,7 +42,7 @@ export default function AboutUsPage(props) {
             <div className="col-sm-12 col-md-6  right">
               <h4>
                 99x is an award winning digital product design studio that
-                specialises in User Experience design ( UX) & User experience
+                specialises in User Experience design ( UX) & User Interface
                 design (UI).
               </h4>
               <p>
