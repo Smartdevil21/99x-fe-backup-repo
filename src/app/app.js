@@ -25,6 +25,10 @@ import ScrollToTop from "../utils/ScrollToTop";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 import web_application_design from "layout/web-application-design";
+import PDFViewer from "components/PDFViewer/PDFViewer";
+import { pdfjs } from "react-pdf";
+
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 require("./app.scss");
 
@@ -89,6 +93,11 @@ class App extends React.Component {
                     path="/checkout/"
                     name="Page"
                     component={CheckoutLayout}
+                  />
+                  <Route
+                    path="/case-study/:fileName"
+                    name="pdfviewer-page"
+                    component={() => <PDFViewer pdfjs={pdfjs} />}
                   />
                   <Route path="/p/" name="Page" component={LegalPageLayout} />
                   <Route path="/" name="Home" component={MainLayout} />

@@ -1,10 +1,12 @@
+// https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/
+
 const projectData = [
   {
     client: "Earthy Tales",
     category: "Website",
     description:
       "Earthy Tales offers the largest selection of organic produce in India that started with a handful of farmers with a mission to make farming more sustainable and bring fresh produce to customer's doorstep.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Earthy+Tales-compressed.pdf",
+    pdf: "Earthy+Tales-compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/earthly_tales_compressed.mp4",
     tags: ["Web Design", "UI-UX", " Illustrations"],
@@ -14,7 +16,7 @@ const projectData = [
     client: "Inconn",
     category: "Web App",
     description: "AI-powered enterprise grade asset management platform.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Inconn-compressed.pdf",
+    pdf: "Inconn-compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/inconn_compressed.mp4",
     tags: ["Logo & Branding", "UI-UX", "Design System"],
@@ -25,7 +27,7 @@ const projectData = [
     category: "Web App",
     description:
       "A platform that enables facilitators to deliver experiential learning programs and team building activities using gamified webinars & simulations.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Gaminar-compressed.pdf",
+    pdf: "Gaminar-compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Gaminar-compressed.mp4",
     tags: ["UI-UX", "Design System"],
@@ -36,7 +38,7 @@ const projectData = [
     category: "Website",
     description:
       "The world's first smart basketball hoop. Using state-of-the-art technology, the huupe tracks your shooting percentage, position on the court, speed, agility, release time, and more",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Huppe.pdf",
+    pdf: "Huppe.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Huupe-compressed.mp4",
     tags: ["Web Design", "Technology"],
@@ -47,7 +49,7 @@ const projectData = [
     category: "Website",
     description:
       "A leading health tech platform that offers online doctor consultations, appointments & end-to-end care from top surgeons in the country.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Practo.pdf",
+    pdf: "Practo.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/practo-compressed.mp4",
     tags: ["Web Design", "Technology"],
@@ -58,7 +60,7 @@ const projectData = [
     category: "Website",
     description:
       "An EdTech Platform focused in North American segment that enables users to pursue their career goals with online and in-person courses that focuses on Agile principles.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Skillbook+-+Case+Study-compressed.pdf",
+    pdf: "Skillbook+-+Case+Study-compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/skillbook-compressed.mp4",
     tags: ["Web Design", "Technology", "Animations and Interactions"],
@@ -69,7 +71,7 @@ const projectData = [
     category: "Mobile App",
     description:
       "A platform that simplifies the process of disbursing personal loans in less than 60 seconds.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Vister-compressed.pdf",
+    pdf: "Vister-compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Vister-compressed.mp4",
     tags: ["Logo & Branding", "UI-UX", "Animations and Interactions"],
@@ -80,7 +82,7 @@ const projectData = [
     category: "Web App",
     description:
       "AI-powered investment platform that empowers first-time investors to seasoned experts to take control of their finances.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Moneyfactory.pdf",
+    pdf: "Moneyfactory.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Moneyfactory-compressed.mp4",
     tags: ["Logo & Branding", "UI-UX", "Web Design"],
@@ -91,7 +93,7 @@ const projectData = [
     category: "Mobile App",
     description:
       "A video based dating app that helps people avoid boring monotonous swipes with video first profiles.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Peperstreet_compressed.pdf",
+    pdf: "Peperstreet_compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/pepperstreet-compressed.mp4",
     tags: ["Logo & Branding", "UI-UX", "Design System"],
@@ -102,7 +104,7 @@ const projectData = [
     category: "Website",
     description:
       "Digital branding & web design for a renowned fashion stylist.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Vykhari+-+Case+Study-compressed.pdf",
+    pdf: "Vykhari+-+Case+Study-compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/vykhari-compressed.mp4",
     tags: ["Web Design", "Technology", "Animations and Interactions"],
@@ -113,7 +115,7 @@ const projectData = [
     category: "Web App",
     description:
       "A learning experience platform (LXP) that manages events, resources, & skill development all in one platform for modern enterprises & businesses.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Chipsoft%2BCase%2BStudy-compressed.pdf",
+    pdf: "Chipsoft%2BCase%2BStudy-compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/chipsoft-compressed.mp4",
     tags: ["UI-UX", "Design System"],
@@ -124,7 +126,7 @@ const projectData = [
     category: "Web App",
     description:
       "A community driven platform designed for the entrepreneurs and creators to access content whether its products, blogs, podcasts, or videos.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Humble-compressed.pdf",
+    pdf: "Humble-compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/humble-compressed.mp4",
     tags: ["UI-UX", "Logo & Branding"],
@@ -135,7 +137,7 @@ const projectData = [
     category: "Website",
     description:
       "A crypto investment platform that simplifies investing in crypto coins & portfolios with automated SIPs.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Prosprr-compressed.pdf",
+    pdf: "Prosprr-compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/prosper-compressed.mp4",
     tags: ["Web Design"],
@@ -146,7 +148,7 @@ const projectData = [
     category: "Website",
     description:
       "Digited builds next-generation e-learning platforms for students, educators and institutes, converging them into an ecosystem for learning.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Digited+Labs-compressed-compressed.pdf",
+    pdf: "Digited+Labs-compressed-compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/digital-labs-compressed.mp4",
     tags: ["Web Design"],
@@ -157,7 +159,7 @@ const projectData = [
     category: "Mobile App",
     description:
       "A two-wheeler digital commerce and finance platform used by lakhs of Indians every month to research bikes and scooters, select their dream two-wheeler .",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/oto.pdf",
+    pdf: "oto.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/oto-compressed.mp4",
     tags: ["Web Design", "UI-UX"],
@@ -168,7 +170,7 @@ const projectData = [
     category: "Mobile App",
     description:
       "MVP UI-UX design of an ecommerce app that allows users to get their hands on freshest & latest fashion with ease.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Kickpick.pdf",
+    pdf: "Kickpick.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/kickpick_compressed.mp4",
     tags: ["UI-UX"],
@@ -179,7 +181,7 @@ const projectData = [
     category: "Website",
     description:
       "We’ve got issues is an online news and magazine platform dwelving deep into design, art, work, style and culture.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/WGT.pdf",
+    pdf: "WGT.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/wgt_compressed.mp4",
     tags: ["Logo & Branding", "Web Design"],
@@ -190,7 +192,7 @@ const projectData = [
     category: "Mobile App",
     description:
       "MVP design of a finTech app that offers investing across asset classes such as stocks, mutual funds, commodities , gold & keep track of their performance in a simplest way possible",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/fuse.pdf",
+    pdf: "fuse.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/fuse-compressed.mp4",
     tags: ["UI-UX"],
@@ -200,7 +202,7 @@ const projectData = [
     client: "Tekorero",
     category: "Website",
     description: "CRM & sales automation platform",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Tekorero.pdf",
+    pdf: "Tekorero.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/tekorero-compressed.mp4",
     tags: ["Web Design", "Technology"],
@@ -211,7 +213,7 @@ const projectData = [
     category: "Web App",
     description:
       "A marketplace for on-demand services in Germany that offers a host of services for home & personal care.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Gausmann.pdf",
+    pdf: "Gausmann.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/gausmann-compressed.mp4",
     tags: ["UI-UX", "Design System"],
@@ -222,7 +224,7 @@ const projectData = [
     category: "Web App",
     description:
       "End to end creator marketplace design with dashboards for B2B service orders, project management, payment gateway, admin & vendor dashboards, Custom login & more.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/99xStartup-compressed.pdf",
+    pdf: "99xStartup-compressed.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/99x-startup-compressed.mp4",
     tags: ["Logo & Branding", "UI-UX"],
@@ -233,7 +235,7 @@ const projectData = [
     category: "Website",
     description:
       "Fitness & personal care app that offers on-demand content from top notch fitness instructors.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Alivio.pdf",
+    pdf: "Alivio.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/alivio-compressed.mp4",
     tags: ["Web Design", "Logo & Branding"],
@@ -244,7 +246,7 @@ const projectData = [
     category: "Website",
     description:
       "Furniko is an online e-commerce website that offers a wide variety of furniture, home decor, lamps & furnishings, Homeware and more at the best prices.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Furnikp.pdf",
+    pdf: "Furnikp.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/furniko-compressed.mp4",
     tags: ["Web Design", "Logo & Branding"],
@@ -255,7 +257,7 @@ const projectData = [
     category: "Website",
     description:
       "Conselium is a financial and strategic advisory firm that offers wealth and financial management services to enterprises, businesses and high networth individuals.",
-    pdf: "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/Case+Study/Concelium.pdf",
+    pdf: "Concelium.pdf",
     video:
       "https://99xassets.s3.ap-south-1.amazonaws.com/Cover+Videos/conceliun-compressed.mp4",
     tags: ["UI-UX"],

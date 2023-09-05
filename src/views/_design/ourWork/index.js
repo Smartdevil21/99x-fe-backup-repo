@@ -99,7 +99,8 @@ export default function OurWork(props) {
         {filteredProjects.map((project, index) => (
           <div className="work" key={index + project.industry}>
             <a
-              href={`http://docs.google.com/gview?url=${project.pdf}&embedded=true`}
+              // href={`http://docs.google.com/gview?url=${project.pdf}&embedded=true`}
+              href={`/case-study/${project.pdf}`}
               className={"media_container"}
               target={"_blank"}
               rel="noreferrer"
@@ -108,7 +109,7 @@ export default function OurWork(props) {
             </a>
 
             <a
-              href={`http://docs.google.com/gview?url=${project.pdf}&embedded=true`}
+              href={`/case-study/${project.pdf}`}
               target={"_blank"}
               rel="noreferrer"
             >
